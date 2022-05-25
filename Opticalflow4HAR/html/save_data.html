@@ -1,0 +1,547 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>save_data</title><meta name="generator" content="MATLAB 9.4"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2021-09-20"><meta name="DC.source" content="save_data.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><pre class="codeinput">close <span class="string">all</span>
+clear;
+clc;
+<span class="comment">% video resource and constant parameters</span>
+videoSource = VideoReader(<span class="string">'F:\dataset\datasets\walk\daria_walk.avi'</span>);<span class="comment">%F:\dataset\datasets\walk</span>
+width = videoSource.Width;
+height =videoSource.Height;
+Threshold = 0.02;
+CloseSize = 8;
+desiredAngles = 5:5:360;
+heiwid = numel(videoSource);
+<span class="comment">% allDistance = zeros(heiwid,length(desiredAngles));% creat a length(i) array with zeros</span>
+boundary = ones(height,width);
+
+<span class="comment">%</span>
+<span class="comment">% % import data</span>
+<span class="comment">% addpath('libsvm-3.25\matlab')</span>
+<span class="comment">% % import libsvm and data set</span>
+<span class="comment">% addpath('F:\github_lib\Opticalflow4HAR\libsvm-3.25\matlab');</span>
+
+<span class="comment">%</span>
+<span class="comment">% train = load('train_ratio.csv') ;</span>
+<span class="comment">% test = load ('test_ratio.csv');</span>
+<span class="comment">% % generate random number for divide data into training and test set.</span>
+<span class="comment">% %n = randperm(size(data,1));</span>
+<span class="comment">% %t = randperm(size(test,1));</span>
+<span class="comment">% %training set</span>
+<span class="comment">% train_matrix = train(:,1:9); % training data 1-70,6 columns</span>
+<span class="comment">% train_label = train(:,10); % training label at 7 column.</span>
+<span class="comment">% % data normalization</span>
+<span class="comment">% [train_matrix, PS] = mapminmax(train_matrix');</span>
+<span class="comment">% train_matrix = train_matrix';</span>
+<span class="comment">% % test_matrix = mapminmax('apply',test_matrix', PS);</span>
+<span class="comment">% % test_matrix = test_matrix';</span>
+<span class="comment">%</span>
+<span class="comment">% model = svmtrain(train_label,train_matrix,'-s 0 -t 2 -c 1.2 -g 2.8 -b 1'); % -v-s 0 -t 2 -c 1.2 -g 2.8'</span>
+
+
+
+
+<span class="comment">% Guassian mixture model :foreground</span>
+<span class="comment">%creat a detector object</span>
+detector = vision.ForegroundDetector( <span class="keyword">...</span>
+    <span class="string">'NumTrainingFrames'</span>,5, <span class="string">'InitialVariance'</span>, 30*30);
+<span class="comment">% Perform blob analysis.</span>
+blob = vision.BlobAnalysis(<span class="keyword">...</span>
+       <span class="string">'CentroidOutputPort'</span>, false, <span class="string">'AreaOutputPort'</span>, false, <span class="keyword">...</span>
+       <span class="string">'BoundingBoxOutputPort'</span>, true, <span class="keyword">...</span>
+       <span class="string">'MinimumBlobAreaSource'</span>, <span class="string">'Property'</span>, <span class="string">'MinimumBlobArea'</span>, 800,<span class="keyword">...</span>
+  <span class="string">'MaximumCount'</span>,3);
+<span class="comment">% insert a bounder</span>
+shapeInserter = vision.ShapeInserter(<span class="string">'BorderColor'</span>,<span class="string">'Custom'</span>);
+
+
+<span class="comment">% optical flow parameters</span>
+opticFlow = opticalFlowHS(<span class="string">'Smoothness'</span>,1, <span class="string">'MaxIteration'</span>, 10, <span class="string">'VelocityDifference'</span>, 0);
+opticalBG = ones(height, width)*255;
+<span class="comment">% frameLogical</span>
+frameLogical = ones(height,width);
+
+<span class="comment">%access frame</span>
+<span class="keyword">while</span> hasFrame(videoSource)
+    frameRGB = readFrame(videoSource);
+    frameGray = rgb2gray(frameRGB);
+
+    flow = estimateFlow(opticFlow, frameGray); <span class="comment">% estimateFlow based on shape</span>
+    <span class="comment">% fmask = detector(frameGray);% mask</span>
+         <span class="comment">% calculate frameLogical binary frame for boundaries point.</span>
+    <span class="keyword">for</span> i = 1:height
+        <span class="keyword">for</span> j = 1:width
+            <span class="keyword">if</span>(sqrt(flow.Vx(i, j)^2 + flow.Vy(i, j)^2) &lt;= Threshold)<span class="comment">%threshold=0.02</span>
+                frameLogical(i, j) = 0;
+            <span class="keyword">else</span>
+                frameLogical(i, j) = 255;<span class="comment">% flow.Vx()...&gt;threshold</span>
+            <span class="keyword">end</span>
+        <span class="keyword">end</span>
+    <span class="keyword">end</span>
+    se = strel(<span class="string">'square'</span>, CloseSize);<span class="comment">% morphlogical</span>
+    <span class="comment">% frameLogical = logical(frameLogical);% binarize frame logical type</span>
+
+    frameLogical = imclose(frameLogical, se);
+    frameLogical =logical(frameLogical);
+    bbox = step(blob, frameLogical); <span class="comment">% boundary</span>
+    out = insertShape(frameRGB,<span class="string">'Rectangle'</span>,bbox,<span class="string">'color'</span>,<span class="string">'green'</span>);<span class="comment">% output with boundary on frame</span>
+
+    <span class="comment">% calculate center of gravity of the foreground</span>
+    [labelImage, numberOfImage] = bwlabel(frameLogical, 8);
+    blobMeasurements = regionprops(labelImage, <span class="string">'Centroid'</span>);
+    yCenter = blobMeasurements(1).Centroid(1);
+    xCenter = blobMeasurements(1).Centroid(2);
+    <span class="keyword">if</span> xCenter&gt;height &amp;&amp; yCenter&gt;width
+        disp(<span class="string">'out of iamge...'</span>);
+        <span class="keyword">continue</span>;
+    <span class="keyword">end</span>
+
+    <span class="comment">% boundaries point from framlogical.</span>
+    [B,L] = bwboundaries(frameLogical,<span class="string">'noholes'</span>);
+    boundaries=B;<span class="comment">% shape boundary coordinate</span>
+
+    boundaries = boundaries{1};
+    Boun_num = size(boundaries);
+    <span class="comment">% boundaries of shapes all</span>
+    xb = boundaries(:,1);
+    yb = boundaries(:,2);
+
+
+
+    <span class="comment">% calculate angle of every boundaries point and distance</span>
+    angles = atan2d((yb-yCenter),(xb-xCenter))+180;<span class="comment">% every angles of boundaries point</span>
+
+    position_coordinate = [xb,yb,angles];
+    <span class="comment">%distances = sqrt((xb-xCenter).^2+(yb-yCenter).^2);</span>
+
+
+
+    <span class="comment">% maybe more than 1 index point with the same angle</span>
+    [uniqueAngles, ia, ic]= unique(angles);<span class="comment">% ia index of original vector,</span>
+    uniquexb= xb(ia);
+    uniqueyb = yb(ia);
+    <span class="comment">%uniqueDistances = distances(ia);</span>
+    uniqueAngles = [uniqueAngles(end)-360; uniqueAngles; uniqueAngles(1) + 360];
+    uniquexb = [uniquexb(end); uniquexb; uniquexb(1)];
+    uniqueyb = [uniqueyb(end); uniqueyb; uniqueyb(1)];
+    desiredxb = interp1(uniqueAngles, uniquexb,desiredAngles);
+    desiredyb = interp1(uniqueAngles, uniqueyb,desiredAngles);
+    <span class="comment">%uniqueDistances = [uniqueDistances(end); uniqueDistances; uniqueDistances(1)];</span>
+    <span class="comment">% desiredDistances = interp1(uniqueAngles, uniqueDistances,desiredAngles);</span>
+    <span class="comment">%allcoordinate(:,1) = desiredDistances;</span>
+    allcoordinate(:,1) = desiredxb;
+    allcoordinate(:,2) = desiredyb;
+
+xc=round(xCenter);
+yc=round(yCenter);<span class="comment">%(x,y)</span>
+xe=round(desiredxb);
+ye=round(desiredyb);<span class="comment">% desiredyb</span>
+count = 1;
+result =[];
+<span class="keyword">for</span> inx = 1:72
+    <span class="keyword">if</span> all(xe(inx)==xc)&amp;&amp; all(yc==ye(inx))
+        disp(<span class="string">'the same point with centroid'</span>);
+    <span class="keyword">continue</span>;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> all(xc==(xe(inx))) || all(yc==(ye(inx)))
+        intersection_space = zeros(1,9);
+        intersection_space(1,1)= xe(inx);
+        intersection_space(1,2)= ye(inx);
+        intersection_space(1,3)= sqrt((xe(inx)-xCenter).^2+(ye(inx)-yCenter).^2);
+        result= [result,intersection_space];
+        <span class="keyword">continue</span>;
+    <span class="keyword">end</span>
+    <span class="keyword">if</span> (xe(inx)&gt;xc)
+        steps = 1;
+    <span class="keyword">else</span>
+        steps = -1;
+    <span class="keyword">end</span>
+     k =((ye(inx)-yc)/(xe(inx)-xc));<span class="comment">% k of  line equation</span>
+
+     swit = frameLogical(xc,yc);
+     intersection_space = zeros(1,9);
+    <span class="keyword">for</span>  x = xc:steps:xe(inx)
+        y =k*(x-(xc))+yc;
+        y = round(y);
+        values = frameLogical(x,y);
+        <span class="comment">% fprintf('x=%d y=%d values=%d',x,y, values);</span>
+        <span class="comment">% disp(values);</span>
+
+           <span class="keyword">if</span> values ~=swit
+                intersection_space(1,count)= x;
+                intersection_space(1,count+1)= y;
+                intersection_space(1,count+2)= sqrt((xe(inx)-xCenter).^2+(ye(inx)-yCenter).^2);
+                count = count+3;
+                swit = values;
+           <span class="keyword">elseif</span> count&gt;7
+               <span class="keyword">break</span>;
+           <span class="keyword">elseif</span> all(count == 1) &amp;&amp; all(x == xe(inx))
+
+                intersection_space(1,1)= xe(inx);
+                intersection_space(1,2)= ye(inx);
+                intersection_space(1,3)= sqrt((xe(inx)-xCenter).^2+(ye(inx)-yCenter).^2);
+
+
+          <span class="keyword">end</span>
+
+
+    <span class="keyword">end</span>
+    result = [result,intersection_space];
+
+
+
+
+
+    <span class="comment">% drawing result on video</span>
+<span class="comment">%     test = load('intersection.csv');</span>
+<span class="comment">%</span>
+<span class="comment">%     test_matrix = test(:,1:9);</span>
+<span class="comment">%     test_label = test(:,9);</span>
+<span class="comment">%     test_matrix = mapminmax('apply',test_matrix', PS);</span>
+<span class="comment">%     test_matrix = test_matrix';</span>
+<span class="comment">%     [predict_label_1,accuracy_1,dec_value] = svmpredict(test_label,test_matrix,model,'-b 1'); % version ,match parameters</span>
+
+<span class="comment">%     for indexp = 1:predict_label_1(end)</span>
+<span class="comment">%     te =predict_label_1(indexp);</span>
+<span class="comment">%     disp(te);</span>
+<span class="comment">%     if te ==1</span>
+<span class="comment">%         result ='walk';</span>
+<span class="comment">%     elseif te ==2</span>
+<span class="comment">%         result ='jump';</span>
+<span class="comment">%     elseif te == 3</span>
+<span class="comment">%         result ='run';</span>
+<span class="comment">%     end</span>
+<span class="comment">%     end</span>
+<span class="comment">%    %  disp(te);</span>
+<span class="comment">%     out = insertText(out,[10 10],result);</span>
+
+<span class="keyword">end</span>
+
+    subplot(2,2,1),imshow(out),title(<span class="string">'frame_Box'</span>);
+    <span class="comment">%subplot(2,2,1),imshow(opticalBG),title('OpF');</span>
+    hold <span class="string">on</span> ;
+    plot(flow, <span class="string">'DecimationFactor'</span>, [2 2], <span class="string">'ScaleFactor'</span>, 20)<span class="comment">% FLOW VECTOR</span>
+	drawnow
+	hold <span class="string">off</span>
+
+<span class="comment">%     subplot(2, 2, 2), imshow(frameLogical), title('logicalFrame');</span>
+<span class="comment">%     hold on</span>
+<span class="comment">%     plot(yCenter,xCenter, 'r+', 'MarkerSize', 10, 'LineWidth', 3);</span>
+<span class="comment">%     hold off</span>
+<span class="comment">%     subplot(2,2,3), imshow(boundary),title('boundaries');</span>
+<span class="comment">%     hold on</span>
+<span class="comment">%     plot(yb,xb,'b-','markerSize',10,'lineWidth',2);</span>
+<span class="comment">%     plot(x,y,'color','r','markerSize',10);</span>
+<span class="comment">%     hold off</span>
+ dlmwrite(<span class="string">'intersection.csv'</span>,result,<span class="string">'-append'</span>);
+<span class="keyword">end</span>
+</pre><img vspace="5" hspace="5" src="save_data_01.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2018a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+
+close all 
+clear;
+clc;
+% video resource and constant parameters
+videoSource = VideoReader('F:\dataset\datasets\walk\daria_walk.avi');%F:\dataset\datasets\walk
+width = videoSource.Width;
+height =videoSource.Height;
+Threshold = 0.02;
+CloseSize = 8; 
+desiredAngles = 5:5:360;
+heiwid = numel(videoSource);
+% allDistance = zeros(heiwid,length(desiredAngles));% creat a length(i) array with zeros
+boundary = ones(height,width);
+
+% 
+% % import data 
+% addpath('libsvm-3.25\matlab')
+% % import libsvm and data set
+% addpath('F:\github_lib\Opticalflow4HAR\libsvm-3.25\matlab');
+
+% 
+% train = load('train_ratio.csv') ;
+% test = load ('test_ratio.csv');
+% % generate random number for divide data into training and test set.
+% %n = randperm(size(data,1));
+% %t = randperm(size(test,1));
+% %training set 
+% train_matrix = train(:,1:9); % training data 1-70,6 columns
+% train_label = train(:,10); % training label at 7 column.
+% % data normalization
+% [train_matrix, PS] = mapminmax(train_matrix');
+% train_matrix = train_matrix';
+% % test_matrix = mapminmax('apply',test_matrix', PS);
+% % test_matrix = test_matrix';
+% 
+% model = svmtrain(train_label,train_matrix,'-s 0 -t 2 -c 1.2 -g 2.8 -b 1'); % -v-s 0 -t 2 -c 1.2 -g 2.8'
+
+
+
+
+% Guassian mixture model :foreground
+%creat a detector object
+detector = vision.ForegroundDetector( ...
+    'NumTrainingFrames',5, 'InitialVariance', 30*30);
+% Perform blob analysis.
+blob = vision.BlobAnalysis(...
+       'CentroidOutputPort', false, 'AreaOutputPort', false, ...
+       'BoundingBoxOutputPort', true, ...
+       'MinimumBlobAreaSource', 'Property', 'MinimumBlobArea', 800,...
+  'MaximumCount',3);
+% insert a bounder
+shapeInserter = vision.ShapeInserter('BorderColor','Custom');
+
+
+% optical flow parameters 
+opticFlow = opticalFlowHS('Smoothness',1, 'MaxIteration', 10, 'VelocityDifference', 0);
+opticalBG = ones(height, width)*255;
+% frameLogical 
+frameLogical = ones(height,width);
+
+%access frame
+while hasFrame(videoSource)
+    frameRGB = readFrame(videoSource);
+    frameGray = rgb2gray(frameRGB);
+   
+    flow = estimateFlow(opticFlow, frameGray); % estimateFlow based on shape
+    % fmask = detector(frameGray);% mask
+         % calculate frameLogical binary frame for boundaries point.
+    for i = 1:height
+        for j = 1:width
+            if(sqrt(flow.Vx(i, j)^2 + flow.Vy(i, j)^2) <= Threshold)%threshold=0.02
+                frameLogical(i, j) = 0;
+            else
+                frameLogical(i, j) = 255;% flow.Vx()...>threshold 
+            end
+        end
+    end
+    se = strel('square', CloseSize);% morphlogical
+    % frameLogical = logical(frameLogical);% binarize frame logical type
+    
+    frameLogical = imclose(frameLogical, se);
+    frameLogical =logical(frameLogical);
+    bbox = step(blob, frameLogical); % boundary
+    out = insertShape(frameRGB,'Rectangle',bbox,'color','green');% output with boundary on frame
+   
+    % calculate center of gravity of the foreground
+    [labelImage, numberOfImage] = bwlabel(frameLogical, 8);
+    blobMeasurements = regionprops(labelImage, 'Centroid');
+    yCenter = blobMeasurements(1).Centroid(1);
+    xCenter = blobMeasurements(1).Centroid(2);
+    if xCenter>height && yCenter>width
+        disp('out of iamge...');
+        continue;
+    end
+
+    % boundaries point from framlogical.
+    [B,L] = bwboundaries(frameLogical,'noholes');
+    boundaries=B;% shape boundary coordinate 
+    
+    boundaries = boundaries{1};
+    Boun_num = size(boundaries);
+    % boundaries of shapes all 
+    xb = boundaries(:,1);
+    yb = boundaries(:,2);
+
+
+    
+    % calculate angle of every boundaries point and distance 
+    angles = atan2d((yb-yCenter),(xb-xCenter))+180;% every angles of boundaries point 
+    
+    position_coordinate = [xb,yb,angles];
+    %distances = sqrt((xb-xCenter).^2+(yb-yCenter).^2);
+    
+    
+    
+    % maybe more than 1 index point with the same angle
+    [uniqueAngles, ia, ic]= unique(angles);% ia index of original vector,
+    uniquexb= xb(ia);
+    uniqueyb = yb(ia);
+    %uniqueDistances = distances(ia);
+    uniqueAngles = [uniqueAngles(end)-360; uniqueAngles; uniqueAngles(1) + 360];
+    uniquexb = [uniquexb(end); uniquexb; uniquexb(1)];
+    uniqueyb = [uniqueyb(end); uniqueyb; uniqueyb(1)];
+    desiredxb = interp1(uniqueAngles, uniquexb,desiredAngles);
+    desiredyb = interp1(uniqueAngles, uniqueyb,desiredAngles);
+    %uniqueDistances = [uniqueDistances(end); uniqueDistances; uniqueDistances(1)];
+    % desiredDistances = interp1(uniqueAngles, uniqueDistances,desiredAngles);
+    %allcoordinate(:,1) = desiredDistances; 
+    allcoordinate(:,1) = desiredxb;
+    allcoordinate(:,2) = desiredyb;
+
+xc=round(xCenter);
+yc=round(yCenter);%(x,y)
+xe=round(desiredxb);
+ye=round(desiredyb);% desiredyb
+count = 1;
+result =[];
+for inx = 1:72
+    if all(xe(inx)==xc)&& all(yc==ye(inx))
+        disp('the same point with centroid');
+    continue;
+    end
+    if all(xc==(xe(inx))) || all(yc==(ye(inx)))
+        intersection_space = zeros(1,9);
+        intersection_space(1,1)= xe(inx);
+        intersection_space(1,2)= ye(inx);
+        intersection_space(1,3)= sqrt((xe(inx)-xCenter).^2+(ye(inx)-yCenter).^2);
+        result= [result,intersection_space];
+        continue;
+    end
+    if (xe(inx)>xc)
+        steps = 1;
+    else
+        steps = -1;
+    end 
+     k =((ye(inx)-yc)/(xe(inx)-xc));% k of  line equation   
+     
+     swit = frameLogical(xc,yc);
+     intersection_space = zeros(1,9);
+    for  x = xc:steps:xe(inx)
+        y =k*(x-(xc))+yc;
+        y = round(y);
+        values = frameLogical(x,y);
+        % fprintf('x=%d y=%d values=%d',x,y, values);
+        % disp(values);
+        
+           if values ~=swit 
+                intersection_space(1,count)= x;
+                intersection_space(1,count+1)= y;
+                intersection_space(1,count+2)= sqrt((xe(inx)-xCenter).^2+(ye(inx)-yCenter).^2);
+                count = count+3;
+                swit = values;
+           elseif count>7
+               break;
+           elseif all(count == 1) && all(x == xe(inx))
+               
+                intersection_space(1,1)= xe(inx);
+                intersection_space(1,2)= ye(inx);
+                intersection_space(1,3)= sqrt((xe(inx)-xCenter).^2+(ye(inx)-yCenter).^2);
+                
+
+          end 
+           
+           
+    end 
+    result = [result,intersection_space];
+
+    
+  
+
+
+    % drawing result on video 
+%     test = load('intersection.csv');
+%     
+%     test_matrix = test(:,1:9);
+%     test_label = test(:,9);
+%     test_matrix = mapminmax('apply',test_matrix', PS);
+%     test_matrix = test_matrix';
+%     [predict_label_1,accuracy_1,dec_value] = svmpredict(test_label,test_matrix,model,'-b 1'); % version ,match parameters
+    
+%     for indexp = 1:predict_label_1(end)
+%     te =predict_label_1(indexp);
+%     disp(te);
+%     if te ==1
+%         result ='walk';
+%     elseif te ==2
+%         result ='jump';
+%     elseif te == 3
+%         result ='run';
+%     end
+%     end
+%    %  disp(te);
+%     out = insertText(out,[10 10],result);
+  
+end 
+
+    subplot(2,2,1),imshow(out),title('frame_Box');
+    %subplot(2,2,1),imshow(opticalBG),title('OpF');
+    hold on ;
+    plot(flow, 'DecimationFactor', [2 2], 'ScaleFactor', 20)% FLOW VECTOR
+	drawnow
+	hold off 
+    
+%     subplot(2, 2, 2), imshow(frameLogical), title('logicalFrame'); 
+%     hold on 
+%     plot(yCenter,xCenter, 'r+', 'MarkerSize', 10, 'LineWidth', 3);
+%     hold off 
+%     subplot(2,2,3), imshow(boundary),title('boundaries');
+%     hold on 
+%     plot(yb,xb,'b-','markerSize',10,'lineWidth',2);
+%     plot(x,y,'color','r','markerSize',10);
+%     hold off  
+ dlmwrite('intersection.csv',result,'-append');
+end
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>

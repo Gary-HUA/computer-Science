@@ -1,0 +1,7 @@
+常见问题总结:
+1. matrix 和 array 区别 :
+matrix 是  array 的一个子集 matrix 具有所有array的特性, matrix 必须是二维的, array 可以是多维的.
+matrix 相对简单的惩罚运算 A*B 就是矩阵积 , a,b 都是矩阵.
+matrix和array都可以通过objects 后面加.T 得到转置,.H F 得到共轭矩阵,加.I得到逆运算
+相反的是在numpy里面arrays遵从逐个元素的运算，所以array：c 和d的c*d运算相当于matlab里面的c.*d运算 而矩阵相乘,则需要numpy的dot命令.
+matrix **2 就是矩阵相乘, 而array**2 相当于数组中的元素逐个求平方.
