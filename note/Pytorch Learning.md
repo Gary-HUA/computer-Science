@@ -96,6 +96,120 @@ TensorBoard 2.8.0 at http://localhost:6609/ (Press CTRL+C to quit)
 ### Transform-torchvision
 
 ```python
+"""
+The transform under torchvision.
+function:
+    "Compose",
+    "ToTensor",
+    "PILToTensor",
+    "ConvertImageDtype",
+    "ToPILImage",
+    "Normalize",
+    "Resize",
+    "CenterCrop",
+    "Pad",
+    "Lambda",
+    "RandomApply",
+    "RandomChoice",
+    "RandomOrder",
+    "RandomCrop",
+    "RandomHorizontalFlip",
+    "RandomVerticalFlip",
+    "RandomResizedCrop",
+    "FiveCrop",
+    "TenCrop",
+    "LinearTransformation",
+    "ColorJitter",
+    "RandomRotation",
+    "RandomAffine",
+    "Grayscale",
+    "RandomGrayscale",
+    "RandomPerspective",
+    "RandomErasing",
+    "GaussianBlur",
+    "InterpolationMode",
+    "RandomInvert",
+    "RandomPosterize",
+    "RandomSolarize",
+    "RandomAdjustSharpness",
+    "RandomAutocontrast",
+    "RandomEqualize",
+    totensor 为什么?  tensor 格式的数据打包包含装了我们学习网络的一些理论基础参数, 例如, 反向传播, 梯度, 设备, 等一系列的数据.
+"""
+# 单张图像的基础处理
+from torchvision import transforms
+import cv2 as cv
+# loading an image
+img_path = "hymenoptera_data/train/ants/6240338_93729615ec.jpg"
+img = cv.imread(img_path)
+print(img.shape)  # (181, 500, 3)
+# transforms 类文件的一个实例化的过程.
+transforms = transforms.ToTensor()  # 实例化对象
+img_tensor = transforms(img)
+print(img_tensor.shape)  # torch.Size([3, 181, 500])
+print(type(img_tensor))  # <class 'torch.Tensor'>
+
+```
+
+### Transform , dataset,  DataLoader
+
+```python
+"""
+Dataloader for self Dataset in pytorch.
+
+"""
+# dataset
+from PIL import Image
+from torch.utils.data import Dataset, DataLoader
+import os
+
+from torchvision import transforms
+
+root_dir = "hymenoptera_data/train"
+label_dir = "ants"
+
+
+class Mydata(Dataset):
+    def __init__(self, root_dir, label_dir, transform=None):
+        self.root_dir = root_dir
+        self.label_dir = label_dir
+        self.image_path = os.path.join(self.root_dir, self.label_dir)
+        self.image_pac = os.listdir(self.image_path)
+        self.transform = transforms.Compose([
+            transforms.PILToTensor(),
+            transforms.Resize((50, 50))
+
+        ])
+
+    def __getitem__(self, idx):
+        image_name = self.image_pac[idx]
+        image_item_path = os.path.join(self.image_path, image_name)
+        image = Image.open(image_item_path)
+        label = self.label_dir
+        # transforms operator for each images
+        if self.transform:
+            image = self.transform(image)
+
+        sample = {"image": image, "label": label}
+
+        return sample
+
+    def __len__(self):
+        return len(self.image_pac)
+
+
+# 实例化Dataset, DataLoader
+dataset = Mydata(root_dir, label_dir)
+dataloader = DataLoader(dataset=dataset, batch_size=6, shuffle=True, num_workers=0, drop_last=True)
+sample = dataset[0]
+print(sample)  # {'image': tensor([[[ 82,  82,  82,  ...,  78,  78,  80],...[236, 238, 238,  ...,   3,   3,   5]]], dtype=torch.uint8), 'label': 'ants'}
+print(type(dataloader))  # <class 'torch.utils.data.dataloader.DataLoader'>
+dataiter = iter(dataloader)
+samples = dataiter.next()
+print(type(samples))
+print(samples)  # 一次输出batchsize 的数据
+
+
 
 ```
 
