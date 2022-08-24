@@ -163,6 +163,7 @@ from PIL import Image
 from torch.utils.data import Dataset, DataLoader
 import os
 
+from torch.utils.tensorboard import SummaryWriter
 from torchvision import transforms
 
 root_dir = "hymenoptera_data/train"
@@ -170,29 +171,31 @@ label_dir = "ants"
 
 
 class Mydata(Dataset):
-    def __init__(self, root_dir, label_dir, transform=None):
+    def __init__(self, root_dir, label_dir, transform=True):
         self.root_dir = root_dir
         self.label_dir = label_dir
         self.image_path = os.path.join(self.root_dir, self.label_dir)
         self.image_pac = os.listdir(self.image_path)
         self.transform = transforms.Compose([
             transforms.PILToTensor(),
-            transforms.Resize((50, 50))
-
+            transforms.CenterCrop(100),
+            transforms.Resize((80, 80))
         ])
 
     def __getitem__(self, idx):
         image_name = self.image_pac[idx]
         image_item_path = os.path.join(self.image_path, image_name)
         image = Image.open(image_item_path)
+        # convers  to RGB
+        image = image.convert("RGB")
         label = self.label_dir
         # transforms operator for each images
         if self.transform:
             image = self.transform(image)
 
-        sample = {"image": image, "label": label}
+        # sample = {"image": image, "label": label}
 
-        return sample
+        return image, label
 
     def __len__(self):
         return len(self.image_pac)
@@ -200,7 +203,8 @@ class Mydata(Dataset):
 
 # 实例化Dataset, DataLoader
 dataset = Mydata(root_dir, label_dir)
-dataloader = DataLoader(dataset=dataset, batch_size=6, shuffle=True, num_workers=0, drop_last=True)
+dataloader = DataLoader(dataset=dataset, batch_size=16, shuffle=True, num_workers=0, drop_last=True)
+"""
 sample = dataset[0]
 print(sample)  # {'image': tensor([[[ 82,  82,  82,  ...,  78,  78,  80],...[236, 238, 238,  ...,   3,   3,   5]]], dtype=torch.uint8), 'label': 'ants'}
 print(type(dataloader))  # <class 'torch.utils.data.dataloader.DataLoader'>
@@ -209,7 +213,131 @@ samples = dataiter.next()
 print(type(samples))
 print(samples)  # 一次输出batchsize 的数据
 
+"""
+# 使用 tensorboard 去可视化我们取得数据
+writer = SummaryWriter("dataloader")
+step = 0
+for data in dataloader:
+    images, target = data
+    print(images.shape)
+    #print(images.shape)
+    #print(target)
+    writer.add_images("dataloader_vision", images, step)
+    step = step+1
+writer.close() # tensorboard --logdir="dataloader" to watch data vision.
+
+```
+
+### nn.Module
+
+```python
+"""
+A simple nn.Module for neural networks.
+"""
+
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+
+class Mymodule(nn.Module):
+    def __init__(self):
+        super().__init__()
+
+    def forward(self, input):
+        input = input + 2
+        output = input
+        return output
 
 
+input = 3
+model = Mymodule()
+input = torch.tensor(input)
+output = model(input)
+print(output)
+```
+
+### Conv2d Demo
+
+```python
+
+"""
+conv2d for self dataset
+"""
+import torch
+from torch import nn
+from torch.nn import Conv2d
+from torch.utils.data import Dataset, DataLoader
+import os
+from PIL import Image
+import torchvision
+from torch.utils.tensorboard import SummaryWriter
+from torchvision import transforms
+# parametes:
+
+
+root_dir = "hymenoptera_data\\train"  # root_dir of dataset.
+ants_label_dir = "ants"  # ants' label_dir.
+bees_label_dir ="bees"  # bees' label_dir
+
+
+class MyData(Dataset):
+    def __init__(self, root_dir, label_dir, transform=True):
+        self.root_dir = root_dir
+        self.label_dir = label_dir
+        self.path = os.path.join(self.root_dir, self.label_dir)
+        self.image_path = os.listdir(self.path)
+        self.transform = transforms.Compose(
+            [
+                transforms.CenterCrop(100),
+                transforms.Resize((100,100)),
+                transforms.ToTensor()
+            ]
+        )
+
+    def __getitem__(self, idx):  # index of image
+        image_name = self.image_path[idx]
+        img_item_path = os.path.join(self.root_dir, self.label_dir, image_name)
+        img = Image.open(img_item_path)
+        img = img.convert("RGB")
+        label = self.label_dir
+        if self.transform:
+           img = self.transform(img)
+        return img, label
+
+    def __len__(self):
+        return len(self.image_path)
+
+#  create conv2d network.
+
+
+class Myconv(nn.Module):
+    def __init__(self):
+        super(Myconv, self).__init__()
+        self.conv1 = Conv2d(in_channels=3, out_channels=6, kernel_size=(3, 3), stride=(1, 1), padding=1)
+
+    def forward(self, x):
+        x = self.conv1(x)
+        return x
+
+# 实例化数据
+ants_data = MyData(root_dir, ants_label_dir)
+bees_data = MyData(root_dir, bees_label_dir)
+# merge small dataset to a train dataset.
+TrainData = ants_data + bees_data
+trainData = DataLoader(TrainData,batch_size=16, shuffle=True,num_workers=0, drop_last=True)
+conv2 = Myconv()  # 实例化网络类
+writer = SummaryWriter("conv2d")
+step = 0
+for data in trainData:
+    img, labels = data
+    print("before input into net: ",img.shape)
+    #print(labels)
+    output = conv2(img)
+    # 更改了out-channel 多余的维度会放到batchsize 上.
+    output = torch.reshape(output, (-1, 3, 100, 100))
+    print(output.shape)  # torch.Size([32, 3, 100, 100])
+    writer.add_images("input_img", img, step)
+    step = step+1
+writer.close()
 ```
 
