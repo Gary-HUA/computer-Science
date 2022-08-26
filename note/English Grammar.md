@@ -42,5 +42,87 @@ He doesn't know how precious a thing it is.
 
 ```python
 # 定冠词 The
+1. 定冠词用在姓氏复数前,表示一家人或者夫妇二人. The Grees are at table.
+2. 用在年代朝代, 逢十的数次前表示某个年代. The Tang Dynasty. In the 1990's
+3. 用在度量单位名词前 表示"每一". I have hired the car by the hour.
+4. 固定句型: v + sb + prep + the + 身体部分. take sb by the arm. hit sb in the face. he red in the face. he blind in the eye.
+5. 说及整个类属名词前 The lion is more fierce than the wolf.
+6. 表示 方向， 方位的名词前. in the east/west/north/south.  on the right.
+7. 表示自然现象的名词前： the climate, the wind. 但是这些特殊词(纯不可数）不用冠词： nature, space, health,buggage, luggage, furniture, weather, fun, adice, word, progress, information, news.
+8. 用在形容词前使之名词化， 表示一类人或者事物. the poor, the unemployed, the impossible.
+9. 乐器， 文娱场所前 中国的乐器不用冠词。 play the violin. go to the cinema. play erhu.
+10. 在某项发明单数名词前. the telephone was invented...
+11. 定冠词 the  用在only， right, same, very 之前， just 之后. this is the very book that i am eager to read. this is just the book...
+12. 和民族，国籍的形容词连用表示全体. the Chinese. 
+13. 用在 越...越... : the busier he is, the happier he feels.
+14. 专有名词前需要用定冠词： the Taiwan straits. the people's republic of China. the XIAN incident/event
+15. 固定短语： at the age of, be in the habit of 有...的习惯。 make the most/best of 充分利用. the other day(several days ago). not in the least(not at all), by the end of 到...时为止。 in the way 挡路， in the corner of  在 ....角落里。 on the one hand, on the other hand. go to the doctor's. on the air 在广播。 To tell you the truth.                   
+```
+
+```python
+# 零冠词 
+1. 不可数名词， 复数名词 表泛指。go for advice/ horses are useful animals.
+2. "月， 季， 星期， 节假日， 洲， 称呼， 职务， 三餐， 球类，惯用语， 学科， 棋类等前用零冠词。we selected him president of the society. Tom became monitor of our class."
+3. turn go 作为变成，成为。 不用冠词. he turned scientist.
+4. 单数名词 + As/though + 主语 + v : 虽然...但是。 hero as he is, he has some shortcomings.
+5. 独立主格结构：  he sat at the table, pen in hand/ a pen in his hand/with a pen in his hand/ and a pen was in has hand.
+6. 有些不可数名词前边有形容词。 也不用a/an 特指可以用the. what fine weather it is!  here is good news for you. i wish you good luch in everying.
+```
+
+### 名词，数词
+
+```python
+# 名词单复数的变化。 特殊： 以o 结尾一般加s 但是Negroes, heroes, volcanoes（volcanos）, potatoes, tomatoes.
+2. f, fe结尾一般直接加s， 特殊：thieves, wives, knives, leaves, shelves, wolves, hafves.
+3. 合成词变成复数， 一般是讲主体变成复数，没有主题名词的最后一部分变复数。 sons in law. story tellers
+4. 常作为不可数名词的词： fun advice, weather, progress, information, bread, butter, baggage, equipment, homework, furniture, practice, wealth.
+5. 有些名词复数形式表示特别含义：papers 文件，论文， 报纸，试卷。 drinks饮料， manners礼貌， times时代，works 工厂，著作， pains 努力， arms 武器， waters 水域， damages 赔偿金。
+6. 单复数同形：means, works, fruit, series, crossroad.
+7.集体名词的数变化（主谓一致）
+# 名词的格  在有生命的名词后加's 无生命的一般用of  双重所有格： 名词 of + 名词的所有格 a friend of my father's
+概念和用法： 
+表示部分概念 of 前通常有表示数量的限制  some friends of my brother's will come to join us.
+表示带有强烈感情色彩的词 of 前通常有指示代词. that dog of Mike's is always making troubles.
+部分名词的所有格用to 表示： 钥匙，答案，桥和路， 出入口的所有格。 the key to the door. the answer to the question. the way to the school.
+8. 名词在修饰名词的时候（名词作定语） 一般使用单数形式， 即使意义上是复数。 shoe repairers, book marks, trouser pockets. 但是也有例外： sports, customs, arms, clothes, sales, accounts,  a sports car. a sales director, a customs officer. arms production.
+9. man woman 的复数变化. man men, woman women 作定语的名词和中心词都要变复数。men teachers. women engineers.
+# 数词：
+1. 倍数， once, twice, three times, ... 
+v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比较级 + than/ the + n(size, height, weight, width) + of
+        the road is (about/more than/less than) 3 times "as long as"/"longer than"/"the length of"/that one      
+2. 不精确数字的表示： 多： over/above/more than.  不到：below/under/less than. 大约：about/around/some/more or less/something like/ or so 
+        he is 40 or so.  
+        half a day/a half day, a day and a half/one and a half days,  two days and a half/two and a half days, one or two days/a day or two, 三番五次：again and again, over nad over again, time after time,  三天两头：every other day, almost every day. 三年五载： from three to five years, in a few years. 三言两语： in a few words, in one or two words. 
+3. 不定数目： dozen/score/hundred/thousand/million of + n  前边有数词 加 s,  a dozen of / donzens of 
+4. 数字的增减： by + 分数/百分数/数字 表示了增加减少了...  the number of our school increased by 50% 
+               to + 分数/百分数/数字 表示增加渐少到... the number of our school increased to 50%
+5. 表示百分比: number + precent + of + sth. 谓语动词的单复数以percent 后的主语为主。 2 percent of the apple/apples is/are eaten.
+             the  percentage of sth is...    v单数。  the percentage of the students is 46.
+6. "修饰可数名词" many=a great=good many / not a few=quite a few/ no few=a number of/dozens of= scores of = a good few/great(large)numbers of apples 许多苹果。
+   "修饰不可数名词" little food 没多少食物， a little food 一点食物， a bit of food 少量食物， much= not a little  a little>little.
+    quit a little = no little/a great(good) deal of/ a great amunt of  food 大量食物。
+   "可数，不可数都可：" a lot of =lots of , a large supply of, supplies of, a large quantity of , large quantities of , plenty of paper and books. 大量的书本。
+```
+
+### 代词
+
+```python
+#人， 物， 反， 指， 不定， 疑问。
+
+```
+
+
+
+### 名词辨析：
+
+```python
+# 常见的名词辨析：
+```
+
+### 固定搭配：
+
+```python
+# 常见的搭配：
+make room for 为...腾出房间
 ```
 
