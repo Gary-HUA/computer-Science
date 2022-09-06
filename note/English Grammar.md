@@ -108,7 +108,34 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
 
 ```python
 #人， 物， 反， 指， 不定， 疑问。
-
+1. 当说话着身份不清楚或者没必要知道性别时, 可以用it 代替. it is a lovely baby. is it a boy or girl?
+2. 人称代词有时候也可做名词. Its not a she, it is a he.
+3. 代词 they 指代已经提到的人事,在口语中还可以代替he, she, 此外,they 还可以指代一般人.
+4. 物主代词: 人称代词的所有格形式,分为名词性(my,your, his, her, its, our, their)/形容词性物主代词(mine, yours, his,hers, its, ours, theirs)
+5. 反身代词: self,反身代词与介词连用:
+        for oneself (亲自) , you will have to see if he has gone to the school for yourself.
+        of oneself (自动地) ,  the computer may shut off of itself.
+        in oneself (本质上), Jim is not bad in himself, but he is a little shy.
+        by oneself = on one's own 独自.  biside oneself = almost mad with anger| excitement.
+        to oneself (独自享用), one would rather have a bedroom to yourself.
+   self 和动词连用:
+    	enjoy oneself = have a good time.  behave yourself (规矩点), absent oneself (缺课,缺勤), devote oneself to doing(专心献身于...), 
+        apply oneself to  (专心致志于...), adapt oneself to (适用于..), treat oneself to sth.(用某物宽带自己.), make oneself at home (不要客气), seat oneself(坐), think for oneself = from ones own opinion (独立思考), boast oneself (自夸), come to oneself = regain self-control (恢复知觉,苏醒过来), help oneself to sth = take sth for oneself (擅自取用)
+        he is not himself today. 他今天不舒服.  when he woke up, he found himself in hospital (find oneself + place 发现自己不知不觉到...)
+6. 疑问代词: 
+    what who的区别: 一般来说 what 问职业,地位. who 问姓名,身份. 
+        what is the man over there? he is a doctor.   who is that man? he is her husband.
+    what which 的区别: what 是在未知的范围内进行选择, 后边不可跟of, which 在已知范围内进行选择 后可跟of. 
+        what do you want to read ?  which is bigger, an elephant or a horse.
+    whatever, whichever, whoever 是强调形式, whatever do you want? 
+    what 的 习惯用法: what is the population?/the distance?/the price/your address/your attitide/the height,weight, depth, length.
+7. it 的用法:
+    强调结构: it is /was(永不变) + 被强调部分, + that/who/whom + 句子其他成分.
+        it was yesterday that he met Li.  was it yesterday that he met Li? when was it that he met li?
+    指时间,距离,自然现象,环境情况,某种感觉(疼,痒等)
+    	it is half past two. it is 6 miles to he hospital. where does it hurt?
+   	指代前提到过的事情,事物,群体,想法,性别不明, 或者性别被认为不重要的人或者动物, 未指明但谈话双方都明白的事情或者情况.
+    
 ```
 
 
