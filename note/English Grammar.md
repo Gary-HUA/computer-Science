@@ -1,8 +1,8 @@
+## 
+
 ## English Grammar 
 
 ### Article (冠词)
-
-
 
 ```python
 #  冠词: 定冠词 the, 不定冠词 a/an  零冠词.
@@ -134,9 +134,103 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
         it was yesterday that he met Li.  was it yesterday that he met Li? when was it that he met li?
     指时间,距离,自然现象,环境情况,某种感觉(疼,痒等)
     	it is half past two. it is 6 miles to he hospital. where does it hurt?
-   	指代前提到过的事情,事物,群体,想法,性别不明, 或者性别被认为不重要的人或者动物, 未指明但谈话双方都明白的事情或者情况.
+   	指代前提到过的事情,事物,群体,想法,性别不明, 或者性别被认为不重要的人或者动物, 未指明但谈话双方都明白的事情或者情况. ive broken a plate. it doesnt matter.
+    作形式主语/形式宾语. 真正的主宾语往往由从句, 动名词, 不定式充当. 
+    	it is not easy to learn a foreign language.(不定式)
+        its not good,use,interesting, fun,easy, difficult,hard, exciting doing sth.(动名词)
+        its a (pity, fact, shame),no wonder, impossible,likely, necessary, important, believed, thought, hoped that....
+        i find it easy to get on with Jim.(形式宾语), i hate it that.../appreciate  
+8. 不定代词: both, all, either, any, neither, none 
+    both (两者都), either(两者任何一个), neither(两者都不), all(三者或以上), any(多个任何一个), none(多个都不)
+    none, nothing, nobody(no one) 用法区别:
+        none: 可指 人, 物,表示特指,常回答 how many, how much 引导的疑问句  常与前面 some, any, every +n 连用.
+        nobody: 指人, 表示泛指, 常回答 who 引导的疑问句 
+        nothing: 指物, 泛指, 常回答what 引导的疑问句. 常与前面 something, anything, everything 连用.
+        No one : 常与前面 somebody, someone, everyone, everybody, anyone, anybody 连用.
+            # 只有 none 后边可以跟of.  None of us heard his voice.
+   any , every :  not any 全部否定, not every 部分否定.
+   each , every : each 两个或两个以上每一个, 作代词, 形容词. every 作形容词, 三个或者三个以上每一个, 作定语.
+    each of + n +v单数  each of the tickets costs 10 dollars.
+    each 作同位语 不影响V的单复数. the tickets each costs 10 dollars.
+    不可以 not each 表示否定, every man is not honest.  Not every man is hoest.
+9. 全部否定, 部分否定: 
+    全部肯定: all, both, everyone, everybody, everything, every + n
+    全部否定: no one, none, nobody, nothing, not ...any , no + n
+    部分否定: not 出现在包含全部肯定的句子中, 不管位置. not 与总括性副词 everywhere, always, wholly, altogether 连用. 
+        Not all of them smoke = all of them dont smoke(部分否) .     all of the boys are clever, but none of them can work out it.(全否)
+10. one , another, the  other, some , others, the others 区别: 
+       一个,一些    另外一个/一些    两个中剩余的一个/一些
+    单数: one, 		another, 		the other (两个中剩下的一个/一些)  
+    复数: some, 		others,			the others
+    the other and others 表示整体中剩余的一部分,  another and the others 不在一个集合.
+    the other + 可数(单/复)    the rest of + 可数/不可数
+11. one, ones, the one, the ones, that, those 区别: 
+    one 替代前边出现的泛指的单数名词 相当于 a/an + 单数名词  同类不同物.
+    ones 泛指复数名词 
+    the one 特指的单数名词, 有时候 that替换
+    the ones 特指的复数名词   those.
+    that 特指的单数名词/不可数名词  = the + 单数可数/不可数
+12. many , much, few, little , a few ,  a little 区别: 
+    可数名词 : many (多), few(少),  a few(肯定 不少), few(否定,很少), 
+    不可数名词: much (多) , little (少), a little (肯定, 不少), little(否定, 少)
+13. 复合不定代词构成的习惯搭配: 
+    	nothing but 只是,  anything but 根本不  
+        he is something of a doctor. 可以说是.    he is a scientist or something. 他是个科学家之类的人物.
     
 ```
+
+### 形容词, 副词
+
+~~~python
+# 形容词原级, 比较级, 最高级.  多个形容词的排序.
+1. 常见的复合形容词:
+    hard-working勤劳的		five-star五星级的		kind-hearted好心的		man-made人造的	three-ledged三条腿的 ordinary-looking相貌平平的
+    time-assuming 耗时的	five-year-old 五岁的   world-famous世界闻名的.  ready-made 现成的  red-hot 炙热的   well-known 广为人知的    
+    snow-white 白雪公主   snow-covered 白雪覆盖的  grass eating 食草的		fast changing变化快的.
+2. 形容词的位置一般放在被修饰的名词后, 但是形容词作定语的时候 修饰由some-, any-, every-, no- and -body, -thing, -one 等构成的复合不定代词需要后置.
+	there is nobody absent today.   is there anything wrong with your car?
+3. 以 -able, 或则 -ble 结尾的形容词可以置于由形容词最高级或者only等词修饰的名词之后.
+	that is the only solution possible.
+4. 成对的形容词可以后置.   there was a huge room, simple and beautiful.
+5. 形容词+介词/不定式 构成的短语作定语 需要后置. A man so difficult to please must be hard to work with.
+6. old, long, high, wide, deep 等词附有数量词或者短语作定语, 需要后置. yesterday, i saw a snake about a meter long.
+7. 多个形容词作定语时候的排列顺序.
+	好, 美, 小, 高, 状,新, 色, 国, 料, 用途.(好坏, 美丑, 大小, 高低长短,形状 新旧, 颜色, 国家, 材料, 用途)
+    an old brown woolen carpet.
+8. 英语中有些形容词前置和后置定语, 位置不同,意义不同:
+    the responsible man(可依赖的人), the man responsible(应负责的人), the present student(现在的学生),the students present(在场的学生)
+    the absent students(心不在焉的学生), the students absent(缺席的学生), the concerned teachers(忧心忡忡的老师们), the teacher concerned(与...有关的老师们)
+9. 表语形容词: 一般作表语, 宾补, 后置定语(有副词修饰可作前置定语) afraid, alone, awake, asleep, alive, alike, afloat, ashamed, well, sorry, unable, worth, sure. 等. she was still alive after the accident.  she was the only person awake that night.
+10. 形容词作状语, 表示伴随或者结果, 不表示动作方式. 
+	he returned home, safe and sound. the fish rolled over, dead.
+11. 副词在居首. furtunatelly, narturally, obviously, happily for her.    Fortunatelly, he was not drowned and was saved by the PLA.
+12. 副词enough 的用法: 
+    形容词/副词 + enough. stuents brave enough to take this adventure course will centainly learn a lot of useful skills.
+    cant/cannot enough 再...也不为过. you can not be careful enough.== you can not (never) be too careful.
+13. 有些连词作副词, 放在句末. though, (ever)since, in case 等
+	she promise to phone, i heard nothing, though.  
+    he came to this school in 1980. he has been working here ever since.
+14. 形容词与副词的比较用法: 
+    平级比较: as...as, not....(as,so)...as  第一个as 后紧跟形容词.
+        he is a teacher as good as her.
+        he is as good a teacher as her.
+        gary does not have so/as many books as i have.
+    as + adj + as + num = num+adj  as tall as 100 meters = 100 meters tall.
+    as .... as 固定搭配. 
+    as long as 有...之久, as well as 既...又..., as far as 到...地点, 就....而言, as good as = evry nearly与...几乎一样, as soon as 一...就, 
+    比较级: 比较级常用修饰语有: rather, much, still, even, far, any, a lot, a little, a great deal, by for, a bit, three times. 
+            the + 比较级, the + 比较级 越....,越....   the more tickets you sell, the more money you will get.
+            比较级 and 比较级. 越来越...  the new city is becoming more and more beautiful.
+            the + 比较级 + of the two + n  两个中较...  the shorter of the two girls is my sister.
+            by 表示相差程度. she is taller than i by three inches.== she is three inches taller than i. 
+            more ... than  与其...不如...  she is more shy than unfriendly.
+            比较级 + than + (any other+单n / all the other复n / anyone else / any of the other+复n / the rest of +复n/不可数
+                          China is large than any other country in Asia 
+         
+           
+            
+            
+~~~
 
 
 
@@ -150,6 +244,10 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
 
 ```python
 # 常见的搭配：
-make room for 为...腾出房间
+make room for 为...腾出房间 		as someone puts it ... 像某人所说的那样		you will catch it 你会受罚		i cant help it 我没办法
+when it comes to... 提到...	   foot it 不行去,							take it easy 别着急			some other day = another day
+3 more days = another 3 days
+go to (great) lengths to do sth.  竭尽全力做某事.
+no better than (与...一样不好) not better than (不比...好) , more or less == almost  far more +adj 及其,非常.
 ```
 
