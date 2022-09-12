@@ -531,7 +531,7 @@ for epoch in range(20):
 @Author  : Gary_H
 @Date    : 12/09/2022 19:44
 dataset cifar 10  net-name: cifar10
-net frame  3@32*32  conv(5*5), 32@32*32 mp(2*2), conv(32@16*16) 网络模型见代码model
+net frame  3@32*32  conv(5*5), 32@32*32 mp(2*2), conv(32@16*16)
 """
 import torch
 import torchvision
@@ -540,6 +540,8 @@ from torch.utils.data import DataLoader
 from torch.utils.tensorboard import SummaryWriter
 
 from Cifar10 import *
+
+
 # preparing datasets
 train_data = torchvision.datasets.CIFAR10(root="./data", train=True, transform=torchvision.transforms.ToTensor(),
                                           download=True)
@@ -559,7 +561,7 @@ test_dataloader = DataLoader(test_data, batch_size=16)
 
 
 # to start train
-model = Mynet()
+model = Mynet
 loss_func = nn.CrossEntropyLoss()
 learning_rate = 0.001
 optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
@@ -572,11 +574,12 @@ writer = SummaryWriter("./logs_train")
 
 for i in range(epoch):
     print("-----第{} 轮训练-----".format(i+1))
+    model.train()  # 这里添加的作用:  查看文档
     for data in train_dataloader:
         imgs, targets = data
         # print(imgs.shape)  # torch.Size([16, 3, 32, 32])
         output = model(imgs)
-        loss= loss_func(output, targets)
+        loss = loss_func(output, targets)
         # optimizer model
         optimizer.zero_grad()
         loss.backward()
@@ -586,6 +589,7 @@ for i in range(epoch):
             print("训练次数{}, loss: {}".format(total_train_step, loss.item()))
             writer.add_scalar("train_loss", loss.item(), total_train_step)  # 训练loss
 # test steps
+    model.eval()  # 测试模块
     total_test_loss = 0
     total_accuracy = 0  # preds
     with torch.no_grad():
@@ -606,5 +610,11 @@ for i in range(epoch):
     print("模型已经保存...")
 
 writer.close()
+
+~~~
+
+### GPU 训练
+
+~~~python
 ~~~
 
