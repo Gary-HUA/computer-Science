@@ -225,11 +225,104 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
             by 表示相差程度. she is taller than i by three inches.== she is three inches taller than i. 
             more ... than  与其...不如...  she is more shy than unfriendly.
             比较级 + than + (any other+单n / all the other复n / anyone else / any of the other+复n / the rest of +复n/不可数
-                          China is large than any other country in Asia 
+                          China is large than any other country in Asia.
+15. 最高级: 否定+比较级 = 最高级     he has never spent a more worrying day.
          
            
             
             
+~~~
+
+### 动词
+
+~~~ python
+# 常见动词和动词词组. 
+~~~
+
+
+
+### 时态 and 语态
+
+~~~python
+# 时态:(一般现在, 一般过去, 一般将来, 现在进行, 过去进行, 过去将来, 将来进行, 现在完成, 过去完成, 现在完成进行)
+# 语态: 主动, 被动.
+一般现在时 (do/does), 
+一般过去时(did)
+一般将来(will/shall do. be to do)(be going to do. be about to do)
+现在进行(am/is/are doing)
+过去进行(was/were doing)
+现在完成(have/has done)
+过去完成(had done)
+将来完成(will have done)
+现在完成进行(has/have been doing)
+过去完成进行(had been doing)
+过去将来(would/should do, was/were to do)(was/were going to do, was/were about to do)
+~~~
+
+### 情态动词 and 虚拟语气
+
+~~~python
+1.情态动词基本用法: 
+    can, be able to, could: 
+        can and be able to 表能力, can 只有现在和过去时, be able to 有更多形式 can you use chopsticks? 
+        can 和 could 都表示你能力, 技能, 许可,建议,请求以及可能性. 但是could是比较委婉的提出 回答时候用can. could you help me carry the bag?
+        may might 表示可能:
+        may 可能性大于might. may 用于祈使句表示祝愿.may you return in safety.
+        	she may be sick (可能性大). she might be sick.
+        表示允许: may 一般用于现在时或者将来时, might 常用于间接引语中表过去时态,might也可用于现在时, 比较委婉的预期, 回答用may.
+            he says he may leave.    he says we might leave.
+        表示建议和请求:  might 比 may 更加客气,意思更加肯定但是没有过去时态的含义. 
+            May/Might i use your bike?   yes, you can/may.  no you mustnt/cant.
+   must
+		must 表示必须, 应该, 无时态变化 you must do everything as i do.
+    	must 表示肯定的推测: the light is still on, so he must be at home.
+        must 表示禁止做的事情: you mustnt smoke in the office.
+        have to 表示必须, 不得不. 由于客观原因而不得不做某事.也可以表示经常或者习惯性的事情必须做. i have to be at my office every evening.
+  should/ ought to 
+	    表示应当, 应该: should 语气比ought to 轻. you shouold /ought to work hard.
+        否定形式表示禁止: children shouldnt/ought not to smoke.
+        should 可表示竟然. he should cheat in the important exam.
+        should 可表陈述意见, 推出建议或者请求. ought to 有劝告之意. 
+        	you ought to resport your parents.  he suggested that they should leave at once.
+  will/would
+		用于各种人称, 表示意志,意愿等 否定形式wont + v   i will tell you all about it.  Tom wont do such a thing.
+    	will 用于疑问句中, 常用在第二人称表示向说话的对方提出请求或者询问. will you please tell her the news when you see her.
+        will 表示习惯动作 总是, 惯于. Fish will die out of water. 
+        would表示客气的请求,建议或者意愿. would you please be quiet.
+        would 表示反复发生的动作. when i passed my school, i would see my teachers who taught me 5 years ago.
+  need 做必要讲, 即可做情态动词,也可做实意动词(need to do) 
+    		he neednt do it (情态)
+    		i need to think it over.(实意)    need you go now? yes i must/ no i neednt
+  Dare 表示 敢, 作为情态动词时候, 主要用在疑问句和否定句.dare作实义动词 后to 可以省略.与need 的用法类似
+		how dare you say that? she donesnt dare (to)ask her father.
+  used to 表示过去常发生的动作或者习惯, 但是现在不复存在了. he used to smoke.
+  shall 
+    	作为情态动词用于第二第三人称, 表示说话的人的意愿,有命令,警告,威胁,允诺 
+        	we shall do as our teacher say.  you shall have the book as soon as i finish it.
+         在疑问句中,shall 用于征求对方意见或者请求指示,常用于第一,三人称
+        	where shall he wait for us.
+         shall 用于宣布法律条文,规定,用第三人称: 
+ 2. 情态动词+ have done 用法(表示对过去的推测)
+	must have done/ cant couldnt have done  想必一定做了.
+    can/could have done 本来能够做; 过去可能会做.  cannot/could not have done 过去不可能做;过去没能够
+    may/might have done 也许已经做... 常用于否定,肯定句 否定中表示可能不.
+    should /ought to have done 本该做, 而实际上没有做. should not /ought not to have done 本不该做而做了.
+    neednt have done 本不必做而做了.
+    had better have done / had better not have done 当时最好做了.
+    would rather have done 宁愿当时做了  (would rather not have done)
+    would like/love to have done 过去愿意做, 但是没成.
+ 3. 宁愿做某事
+	would rather do sth (than do sth)
+    would do sth, rather than do sth.
+    would rather sb did sth
+    prefer to do sth. 
+    perfer to do sth rather than do sth
+    prefer doing sth to doing sth.
+虚拟语气:
+    1. 条件虚拟语气.
+    	
+    
+  
 ~~~
 
 
@@ -238,6 +331,12 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
 
 ```python
 # 常见的名词辨析：
+common, usual, normal, ordinary:
+nearly, almost, hardly
+fairly, quite, rather,very, pretty:
+possible, probably, likely:
+    possible, 客观上的可能性, 希望小. probably,很可能,大概有事实上逻辑上的合理可能. likely, 外表迹象判断
+    It is possible,probably, likely that...
 ```
 
 ### 固定搭配：
