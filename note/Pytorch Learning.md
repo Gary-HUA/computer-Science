@@ -405,5 +405,206 @@ for data in trainData:
 
 ```
 
+### optimizer 
 
+~~~python
+"""
+@Project : Study-file-python
+@File    : .py
+@Author  : Gary_H
+@Date    : 12/09/2022 16:15
+optimizer  训练过程中优化器的使用
+"""
+
+import torch
+from torch import nn
+from torch.nn import Conv2d, MaxPool2d, Flatten, Linear
+from torch.utils.data import Dataset, DataLoader
+import os
+from PIL import Image
+import torchvision
+from torch.utils.tensorboard import SummaryWriter
+from torchvision import transforms
+
+
+# parametes:
+root_dir = "hymenoptera_data\\train"  # root_dir of dataset.
+ants_label_dir = "ants"  # ants' label_dir.
+bees_label_dir ="bees"  # bees' label_dir
+
+
+class MyData(Dataset):
+    def __init__(self, root_dir, label_dir, transform=True):
+        self.root_dir = root_dir
+        self.label_dir = label_dir
+        self.path = os.path.join(self.root_dir, self.label_dir)
+        self.image_path = os.listdir(self.path)
+        self.transform = transforms.Compose(
+            [
+                transforms.CenterCrop(100),
+                transforms.Resize((100,100)),
+                transforms.ToTensor()
+            ]
+        )
+
+    def __getitem__(self, idx):  # index of image
+        image_name = self.image_path[idx]
+        img_item_path = os.path.join(self.root_dir, self.label_dir, image_name)
+        img = Image.open(img_item_path)
+        img = img.convert("RGB")
+        label = self.label_dir
+        if label == "ants":
+            label = 0
+        else:
+            label = 1
+        if self.transform:
+           img = self.transform(img)
+        return img, label
+
+    def __len__(self):
+        return len(self.image_path)
+
+
+#  create conv2d network.
+class Mynet(nn.Module):
+    def __init__(self):
+        super(Mynet, self).__init__()
+        self.model = nn.Sequential(
+            Conv2d(3, 32, (5, 5), padding=2),
+            MaxPool2d(2),
+            Conv2d(32, 32, (5, 5), padding=2),
+            MaxPool2d(2),
+            Conv2d(32, 64, (5, 5), padding=2),
+            MaxPool2d(2),
+            Flatten(),
+            Linear(9216, 128),
+            Linear(128, 2)
+        )
+
+    def forward(self, x):
+        x = self.model(x)
+        return x
+
+
+# 实例化数据
+ants_data = MyData(root_dir, ants_label_dir)
+bees_data = MyData(root_dir, bees_label_dir)
+# merge small dataset to a train dataset.
+TrainData = ants_data + bees_data
+trainData = DataLoader(TrainData,batch_size=16, shuffle=True,num_workers=0, drop_last=True)
+conv2 = Mynet()  # 实例化网络类
+
+loss = nn.CrossEntropyLoss()
+optimizer = torch.optim.SGD(conv2.parameters(), lr=0.01)
+for epoch in range(20):
+    print("epoch is :", epoch)
+    running_loss = 0.0
+    for data in trainData:
+        img, labels = data
+        # print("before input into net: ", img.shape)  # 16,3,100,100
+        output = conv2(img)
+        result_loss = loss(output, labels)
+        optimizer.zero_grad()
+        result_loss.backward()
+        optimizer.step()
+        running_loss = running_loss + result_loss
+    print(running_loss)
+~~~
+
+### 模型的保存和读取
+
+~~~python
+保存办法: 保存了网络模型和相关的参数. 
+    torch.save(model, "model-name.pth")  
+   读取: model = torch.load("path--.pth")
+    二: 把网络的状态保存为字典 只有模型参数. 这个保存是官方推荐, 更加具有优势.
+        torch.save(model.state_dict(), "model-name.pth")
+    
+~~~
+
+### 跑一个完整的分类任务
+
+~~~python
+"""
+@Project : crf10-classification
+@File    : .py
+@Author  : Gary_H
+@Date    : 12/09/2022 19:44
+dataset cifar 10  net-name: cifar10
+net frame  3@32*32  conv(5*5), 32@32*32 mp(2*2), conv(32@16*16) 网络模型见代码model
+"""
+import torch
+import torchvision
+from torch import nn
+from torch.utils.data import DataLoader
+from torch.utils.tensorboard import SummaryWriter
+
+from Cifar10 import *
+# preparing datasets
+train_data = torchvision.datasets.CIFAR10(root="./data", train=True, transform=torchvision.transforms.ToTensor(),
+                                          download=True)
+test_data = torchvision.datasets.CIFAR10(root="./data",train=False,transform=torchvision.transforms.ToTensor(),
+                                         download=True)
+
+train_data_size = len(train_data)
+test_data_size = len(test_data)
+print("train-data_length: {}".format(train_data_size))  # train-data length50000
+print("test_data_length: {}".format(test_data_size))
+
+
+# loading dataset
+train_dataloader = DataLoader(train_data, batch_size=16)
+test_dataloader = DataLoader(test_data, batch_size=16)
+
+
+
+# to start train
+model = Mynet()
+loss_func = nn.CrossEntropyLoss()
+learning_rate = 0.001
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
+# set net of train parameters
+total_train_step = 0
+total_test_step = 0
+epoch = 10
+# 画图显示训练结果
+writer = SummaryWriter("./logs_train")
+
+for i in range(epoch):
+    print("-----第{} 轮训练-----".format(i+1))
+    for data in train_dataloader:
+        imgs, targets = data
+        # print(imgs.shape)  # torch.Size([16, 3, 32, 32])
+        output = model(imgs)
+        loss= loss_func(output, targets)
+        # optimizer model
+        optimizer.zero_grad()
+        loss.backward()
+        optimizer.step()
+        total_train_step += 1
+        if total_train_step % 100 == 0:
+            print("训练次数{}, loss: {}".format(total_train_step, loss.item()))
+            writer.add_scalar("train_loss", loss.item(), total_train_step)  # 训练loss
+# test steps
+    total_test_loss = 0
+    total_accuracy = 0  # preds
+    with torch.no_grad():
+        for data in test_dataloader:
+            imgs, targets = data
+            output = model(imgs)
+            loss_test = loss_func(output, targets)
+            total_test_loss += loss_test.item()
+            accuracy = (output.argmax(1) == targets).sum()
+            total_accuracy = total_accuracy + accuracy
+    print("整体测试集上的loss: {}".format(total_test_loss))
+    print("整体测试集上的accuracy: {}".format(total_accuracy/test_data_size))
+    writer.add_scalar("test_accuracy", total_accuracy/test_data_size, total_test_step)
+    writer.add_scalar("test_total_loss", total_test_loss, total_test_step)
+    total_test_step += 1
+    # 保存每一个轮训练的一个model
+    torch.save(model, "./sifar10_{}.pth".format(i+1))
+    print("模型已经保存...")
+
+writer.close()
+~~~
 
