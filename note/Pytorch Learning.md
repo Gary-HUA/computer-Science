@@ -618,3 +618,63 @@ writer.close()
 ~~~python
 ~~~
 
+### 验证模型
+
+~~~ python
+"""
+@Project : crf10-classification
+@File    : .py
+@Author  : Gary_H
+@Date    : 12/09/2022 22:42
+验证模型
+"""
+import torch
+import torchvision
+from PIL import Image
+from torch import nn
+
+root = "F:\pythonProject\crf10-classification\image\cat.jpg"
+image_path = root
+image = Image.open(image_path)
+# 图像通道转换
+image = image.convert('RGB')
+transform = torchvision.transforms.Compose([
+    torchvision.transforms.Resize((32, 32)),
+    torchvision.transforms.ToTensor()
+])
+image = transform(image)
+# load net
+
+
+class Mynet(nn.Module):
+    def __init__(self):
+        super(Mynet, self).__init__()
+        self.model = nn.Sequential(
+            nn.Conv2d(3, 32, (5, 5), stride=(1, 1), padding=2),
+            nn.MaxPool2d((2, 2)),
+            nn.Conv2d(32, 32, (5, 5), stride=(1, 1), padding=2),
+            nn.MaxPool2d(2, 2),
+            nn.Conv2d(32, 64, kernel_size=(5, 5), stride=(1, 1), padding=2),
+            nn.MaxPool2d(2, 2),
+            nn.Flatten(),
+            nn.Linear(64*4*4, 64),
+            nn.Linear(64, 10)
+
+        )
+
+    def forward(self, x):
+        x = self.model(x)
+        return x
+
+
+model = torch.load("sifar10_10.pth")
+print(model)
+image = torch.reshape(image, (1, 3, 32, 32))
+model.eval()
+with torch.no_grad():  # 非常好的一步, 节约内存
+    output = model(image)
+print(output)  # tensor([[-1.3187, -5.6638,  4.0470,  3.3831,  3.4556,  6.1369, -2.3145,  3.4667, -6.4005, -4.9906]])
+print(output.argmax(1))  # tensor([5])
+
+~~~
+
