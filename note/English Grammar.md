@@ -320,9 +320,152 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
     prefer doing sth to doing sth.
 虚拟语气:
     1. 条件虚拟语气.
-    	
-    
+    	过去时态: had done,  would /should have done. if i had time, i would have dropped by. 
+        现在时态: were/did , would/should do. if i were you, i would refuse the money.
+        未来: were/did, were to do, should do,  would/should do.if you came/were to come/should come tomorrow, i would give it to you.
+    2. if 省略句
+    	在条件句中, 可以省略if, 把were,had, should提到句首, 标为倒装句.(否定不缩写) were i you, i would take his advice.
+        if you had followed his advice, you would be better mow(条件句是表示过去的虚拟, 主句是对现在的虚拟.)
+   3. should 表示虚拟:
+    	表示建议, 愿望,命令等词后的宾语从句中,可以归纳为一坚持insist, 二命令(order, command),三建议(advice, suggest, propose),四要求(demand, desine, require, request)
+        He suggested that we (should) start off early the next day.
+        They insisted that the boy(should) go with them.
+       	用过去式表示虚拟, 需要向前推一个时态. i wish (that) i had accepted it yesterday.
+        if only + 从句:  only if 只有...才
+            要是...就好了, if only i were a boy. 
+            只要, if only he comes, i will come.
+            但愿, if only he comes here early.
+            
+  1. 与现在事实相反的虚拟：
+
+If + did / were + ..., ... would/ should/ could/ might + do （动词原形）
+
+If I were you, I would go abroad at once. (I am not you.)
+
+If he knew it now, he could help me. (He doesn't know it now.)
+
+2. 与过去事实相反的虚拟：
+
+If + had done + ..., ... would (might) have done ...
+
+If I had known your telephone number yesterday, I would have phoned you. (I didn't know your telephone number.)
+
+If you had come here a little earlier just now, you might have met her. (You didn't come here earlier.)
+
+3. 与将来事实相反的虚拟：
+
+(1) If + should + v., ... would + v. （可能性很小）（译作“万一”）
+
+If it should rain tomorrow, you could stay at home.
+
+If I should fail, what should Ido?
+
+(2) If + did / were to + v ..., would + v. （完全不可能）
+
+If the sun were to rise in the west, I would lend you the money.
+
+If you finished it in 3 minutes, I would give you my car.
+
+4. 特殊重点
+
+［简单联想记忆］：
+
+● 下列动词后的“宾语从句”中需要用虚拟形式，即should + 动词原形，shoud在美国英语中要省略（TOEFL语法考点）。此类常见的动词有：order, ask, decide, demand, require, recommend, suggest（建议）, insist（坚决要求）, advise, etc.
+
+He suggested that we (should) help them with English.
+
+The teacher ordered that the homework (should) be finished within half an hour.
+
+● 下列名词后的同位语从句中要用“should + 动词原形”（should可省去）的虚拟。此类常见的名词有：suggestion, order, request, demand, importance, proposal.
+
+He made a suggestion that we (should) have a fancy dress party.
+
+I think it is a thing of importance that it (should) be done soon.
+
+● It is / was important / necessary / natural / essential / advisable / strange / surprising, ect. + that +主语+ should + v.
+
+It is strange that you should say such a thing.
+
+It was important that you should tell me all the information.
+
+● wish后的宾语从句中，as if 后的状语从句中，须用下列的虚拟形式：
+
+主 + wish+ (that) + 主 + did / were（指现在）
+
+had done（指过去）
+
+would+ v.（指将来）
+
+I wish that I met my uncle now.
+
+I wish I had met my uncle yesterday.
+
+I wish I could meet my uncle tomorrow.
+
+● It is (high) time that ... + did / were ...
+
+It is time that you went to bed.
+
+● would rather that ... + did / were ...
+
+I would rather that you were not here now.
+
+● would sooner that ... + did / were ...
+
+I would sooner that you got up earlier.
+
+I would sooner that you were not my brother.
   
+~~~
+
+### 介词, 连词,并列句
+
+~~~python
+1. 介词:
+    表方位: above--below over---under on---beneath 上方下方  across横穿, around 附近, through 穿过, into---out of, in, up---down,beside, to ---from,  
+    # in, on, to :
+        in 表示在范围内(包含), to 在范围之外(相离), on 相邻(相切)
+   	# across, over, through, past:
+        across 横穿, 穿越, 在物体表面. over 跨过,超过.运动发生在物体的上面. through 物体空间内穿过. past 从旁边经过,发生在某物旁边.
+    # at in on: 
+        at: 用于较小的地方, 用于门牌号前.  He arrived at the village.
+        in 较大的地方, 在...上, 还指接触深度, 侧重深度 打击某人的脸, 嘴,眼,胸, 腹等用in. He arrived in Beijing.
+        on: 一般指面或者线的接触.打击某人的头,额头, 鼻子, 耳朵,颈, 肩, 腿 用on.  there are lots of apples on the tree.植物本身长出的用on, 以外in
+    # among, between: among 在...之间, 三者或者三者以上的人或者物. between, 两者之间. 当句子中出现divide, share 等词后, 若后面跟着几个单数名词, 则用between, 后面若跟着复数名词, 用among between 均可.
+    # 表示时间的介词: at  in  on by 
+    	at 表示某一个时间点, 节日. at 5. at night, at Christmas 
+        in 表示较长的时间段, 如上午, 下午, 晚上, 年月等 in the 1990s, in April, in the morning.
+        on 若具体到某一天或者特定的上午下午晚上用on.如某日, 某节日, 某周日. 还可以构成短语 on time准时. in time 及时 on October 1st.
+        by 在...期间, 不迟于, 在某时刻前. he worked by day and slept by night. he must have arrived there by moon.
+        当时间名词被 this, that, last, next, some, every 等词限定时, 通常不用介词. we visited the factory last month.
+        歌诀: 年月周前in, 日子前边却不行, 遇到几号用on, 上午下午用in, 要说某日上下午,把in 换on 才能行, 午夜黄昏用at, 周末用它也不错. at用在时刻前, past 要加 to 要减.
+    # in, after:
+    	in 在....时间之后, 此时所修饰名词必须表将来,后面必须是一段时间,否则用after, late.
+        My father will be back in three days. 
+        My father will be back after 3 oclock.
+        My father come back after 3 days/3 days later.
+    # for from since :
+    	for 后接表时间段的名词词组, 表示行为状态持续了多久. Gary enjoyed the country life and lived there for almost 5 years after his retirement.
+        from 后接表示时间点的名词词组, 表示行为或者状态的起始点, 不涉及持续时间的长短. My younger sister began to learn dance from the age of 3.
+        since 后接表示时间点的名词词组, 不仅表示行为状态起始点, 还强调持续性. Gary has been doing his homework since 7 oclock.
+    # 表示方法, 方式, 手段的介词: by, in, with, through 
+    	by 不涉及交通工具的名字用by, 涉及交通工具的用by 但是名词用单数.  by water/air/land/sea  by bike/taxi/plane/ship
+        on/in 旅行方式涉及确定的特指的交通工具, 名词前有修饰语. travel in this plane, leave on an early train
+        with 用于有形的工具或者身体某些器官. we see with our eyes, hear with our ears and walk with our legs.
+        	The clothes were made by hand/ with her own hands.
+        through: 通过(多指抽象概念): you can master English through more practice.
+        in:
+            用 后常跟语言, 材料, 方式等 in english , in blue ink.
+            表示用...方法/方式 in this/that/the same way, by this/that ...means, by means of. with this/that ...method.
+     # 表示原因的介词: at, with, for, from, of, over
+    	at 表示某种情绪的起因, 通常与喜怒哀乐吃惊等形容词连用. you didnt look very surprised at the news of his failure.
+        with 多用于就表示情绪的形容词或者身体动作/状态的动词之后,表示某种心理原因. her face went red with anger.
+        for 与表感情的抽象名词连用 与 reason, famous 连用. for this reason, be famous for...
+        from 常接抽象名词, 表示自然或者间接原因. suffer from hungry.
+       
+        
+    	
+        
 ~~~
 
 
