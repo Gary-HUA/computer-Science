@@ -1,5 +1,3 @@
-## 
-
 ## English Grammar 
 
 ### Article (冠词)
@@ -462,10 +460,204 @@ I would sooner that you were not my brother.
         with 多用于就表示情绪的形容词或者身体动作/状态的动词之后,表示某种心理原因. her face went red with anger.
         for 与表感情的抽象名词连用 与 reason, famous 连用. for this reason, be famous for...
         from 常接抽象名词, 表示自然或者间接原因. suffer from hungry.
-       
+        of 多用于表示自身原因: I am ashamed of myself for being so stupid.
+            it is + adj(性质, 特征 kind, stupid, considerate, impolite, clever...)+ of sb to do sth == sb be + adj + to do sth.
+        	it is + adj + for sb to do sth. (important, necessary, possible...)
+        over: 常用于带有感情色彩的词: cry, quarrel, laugh, sigh
+                these men have quarrel over the price of a load of hay(干草).
+    # 常考的介词用法:
+        by 
+        1. 在...旁边  they are planning to camp by the lake this summer.
+    	2. 通过, 借助于:  the house is heated by gas. 这个房间是烧气取暖的.
+        3. 按照(表示数量, 单位等) they are paid by the day. Bananas are usually sold by weight.
+        4. 在...之前, 不迟于. we cant finish the work by the end of this month.
+        5. 被, 由(用于被动语态, 后接动作的执行者): the book was written by an chinese writer.
+        6. 相差(后跟数词,表示差距): The bullet missed him by two inches.
+        7. 因, 由于.. I met him in the street by chance.
+        8. 与 catch, hit, lead 等动词连用, 表示以身体的某部分为动作的对象 the + 身体部分置于by 之后. the mother led the child by the hand when crossing the street.
+        9. 关于..., 就...而论  he is a doctor by profession.
+        with 
+        1. 和...一起  they are discussing the matter with the foregn friends.
+        2. 用...工具  he is writting with a pen.
+        3. 在...身边,带有(表示从属关系) I have no money with me .
+        4. 对, 就...来说,关于(表对象) he is angry with her
+        5. 尽管, 虽然(表示让步) with all his achievements, he remains modest. 
+        6. with 复合结构: he left, with the door open. 
+        7. 为... 因为...而(表示原因,理由) my mother is in bed with a bad cold.
+        8. 与...一起, 随着... the girl seemed to be growing pretter with each day.
+        9. 若是(表示条件) with more money, i would be able to buy it. 
+ 2. 连词: 
+    按照属性, 连词分为并列连词和从属连词. 并列因为并列句, 从属连接名词性/状语从句
+    并列连词:
+        1. 并列(联合:) and, both..and..., neither...nor, not only...but also..., as well as 
+        2. 转折: but, while, yet, whereas, however
+        3. 因果: so, for 
+        4. 选择: or, or else, either...or...   
+    名词性从属连词: that, whether, if, whom, whose, what, which, when, where, why, whatever, whomever, whoever.
+    状语从句从属连词:
+        1.地点: wherever
+        2.方式: as, as if, as though
+        3.原因:considering(that), now that, because, since, as, seeing that
+        4.目的:so that, in order that, in case(that), for fear that 
+        5.结果:so that, so...that,such...that
+        6.条件:if,unless,as/so long as, on condition that, supposing(that), provided/providing that
+        7.让步: though, although, even if, even though, no matter..., whatever
+        8.比较:as, than, as...as, not so...as
+    and 连词:
+        1. 和, 并且 
+        2. 三个或者三个以上的词连接,每个词后边加一个逗号, 最后一个单词前加and: he enjoy tennis, baseketball and football
+        3.祈使句后接and: Go straight on, and you will see the library.
+    but 连词:
+        1.但是
+        2. 包含BUT 的习惯语. all but 几乎,将近  but for (除了), not that...but that...(不是因为...而是因为...), nothing but(只是), but then(在另一方面,不过),
+    not only...but also...: 
+        1. 做并列连词, 可以连接相同作用的单词,短语或或者分句. 
+        	Not only you but also i am a student(并列主语). Success depends not only on talent but also on effort.(并列宾语).
+        2. 如果连接两个主语(并列主语), 则谓语动词遵循就近一致原则:(例句上一句).
+            neither...or...表示选择,也遵循就近原则 either you leave this house or i will call the police.
+        3. Not only 置于句首, 应倒装, 是部分倒装. Not only did he make a promise, but he kept it.
+        4.not only...but also 中的only 可以用merely, alone, 代替, also也可以省略. it is not only/merely/alone heavy, but(also) rough.
+  3. 句子结构: 
+    简单句: 主+谓, 主+谓+宾, 主+谓+宾+宾补, 主+谓+宾+宾, 主+系+表
+    并列句: 
+        表递进: and, not, not only...but also, neither...nor, not...but...
+        表转折: but, yet, whereas, while
+        表选择: either...or..., or..., otherwise
+        表因果: so, for. while, when
+    复合句: 
+        宾语从句, 名词性从句(主语,宾语, 表语,同位语), 状语从句
         
-    	
-        
+~~~
+
+### 从句 :  定语从句, 名词性从句, 状语从句
+
+~~~python
+状语从句: 时间, 条件, 方式, 原因, 让步, 比较, 地点, 目的, 结果
+名词性从句: 主语,宾语, 表语,同位语从句
+1. 状语从句: 
+    1. 时间状语从句:
+       # when, while, as 
+        when: 引导持续性动作或则短暂动作, 可用于主从句同时发生或者从句先于主句发生.when i lived there, i used to go to the seashore on sundays.
+        当when引导的时间状语从句是表系结构, 同时主语和主句的主语一致,表语是一个名词, 那么可以用as 省略句代替
+        as a yong man, he was fond of hunting. (when he was a yong man, he was fond of hunting.)
+        while: 引导持续性的动作,侧重于主句动作和从句动作的对比: please dont talk so loud while others are working.
+        as: 表示主从句两个动作交替进行或者同时完成,可以翻译为 一边...一边... , 随着....
+            as time goes on, it is getting warmer and warmer.
+        如果主句是短暂性动作, 从句用延续性动词进行时态表一段时间内进行的动作,此时 while, when, as 可以互相替换.
+        when/while/as i was talking about the issue, i came across a friend.
+       # as soon as, immediately, directly, instantly, the moment, the minute, the instant, no sooner...than..., hardly/scarely...when..,once. 这些词一般翻译为"一...就....", 从句用一般现在时代替将来时态
+        no sooner/hardly/scarely + had sb done sth + than 过去式/when 过去式
+        hardly had i got home when it begin to rain.
+       # till, until, not...until:
+    	肯定句: 主句谓语动词是持续性的, 肯定的句式. 表示动作一直持续到这个时间点才停止.
+            he remained there until/till she arrived.
+         否定句: 主语谓语动词是非持续性的, 否定的句式. 表示动作一直到这个时间才开始.
+            he wont go to bed until/till she returns.
+         till 不可放于句首, until  可以. until you told me i had no idea of it.
+         not...until:
+            强调句: it is/was not until...that...  it was not until you told me that i had any idea of it
+            倒装句: Not until you told me did i have any idea of it.
+       # before, since :
+    	before: 还没...就..., 不到...就..., ...才...,还没来得及. we hadnt run a mile before he felt tired.
+        before 从句中谓语动词不用否定式. Before they reached the station, the train had gone. 
+        It will be + 一段时间 + before ... 还要多久才... it will be half a year before i come back.
+        since: 从句中的谓语动词是非持续性的, 主句谓语动词是持续性的或者反复发生的.  从句时态: was/were/did 主句时态:has/have done (been doing)
+              she has worked in this factory since she left.
+        it is + 一段时间 + since 从句. 句意取决于从句谓语动词是都持续性动词.
+        	it is three years since the war broke out(战争爆发非持续性).----> 有疑问
+             it is three years since i smoked a cigar(持续性) 不吸烟有三年了(--->)(since i stopped smoking a cigar)
+       # every time, each time, next time, the first time, any time, all the time. 表示每当..., 每次..., 下次...
+   			Every /each time i was in trouble, he would come to help me out.
+       		The last time she saw James, he was lying in the bed.
+       2.地点状语从句:where, wherever
+        where, wherever指具体地点时, 从句可用于主句之前或者之后.
+        we should go where the Darty needs us most.
+        表示抽象条件时, 从句必须放在主句之前. where there is a will, there is a way. 有志者,事竟成.
+        whereever there is smoke, there is a fire.
+        where 引导的定语从句和状语从句:
+            you'd better make a mark where you have any questions.
+            you'd bettter make a mark at the place where you have any questions.(定语从句)
+      3.原因状语从句: because, since, as, now that, seeing that, considering that
+        because 主句前或者后, 表示直接的因果关系, 语气较强, 可以用于回答why, 可以被强调
+        as   主句前或者后, 表示双方都知道的原因, 语气弱, 不能用于回答why 问句, 不能被强调.
+        since/now that 主语前,表示双方都知道的原因, 语气弱, 不能用于回答why 问句, 不能被强调.
+        # when 也可以表示原因, 由既然, 考虑到的意思, 相当于 since, considering that. 
+        	it was foolish of you to take a taxi when you could walk there five minutes.
+      4. 目的状语从句: 
+        1. in order that/so that 以便, 为了的意思, 他们引导的状语从句要情态动词.In order that 比so that 正式,可以置于主句前后, so that 只能置于主句之后.
+        	i will spear slowly, so that you can understand me. 
+            in order that we might see the sunrise, we started for the peak early.
+        2.for fear that 害怕,担心/in case 以防万一 
+        	Mary didnt want to you out of bed, for fear that she might wake her baby up.
+            Take your raincoat, in case it rains.
+      5. 结果状语从句: so that, so...that, such...that...
+         1. 非正式语境中, so...that, such...that 引导的句子中that可以省略.
+         2. too...to...(太...而不能...), enough to...(达到某种程度可以), so...as to(那么...以至于...)
+        	he didnt get up early enough to catch the bus. 
+            He get up too late to catch the bus. 
+            he got up so late as to miss the bus.
+      6.条件状语从句: if, unless(=if...not 如果, 除非.., 否则...), so/as long as(只要), in case(万一), on condition that(条件是), suppose/supposing(假设,如果),provided that(如果)
+        as long as you dont lose heart, you will succeed.
+      7.方式状语从句:as, as if /though 
+        as if好像 / though 引导的从句一般用虚拟语气, 但是如果从句中陈述的情况是可能实现的, 也可以用陈述语气.
+        i feel as if i have a fever.  the old lady treats the boy as if he were her own son.
+      8. 让步状语从句: though/although(尽管,虽然), even though/even if(即便)
+        although and though 一般可以互换, 都可以和yet, still等连用, 但是不能和but 连用.
+        even though it is raining, i will go.
+        envn if i were busy, i would go.
+        though 可以用在句尾, 表示 可是,然而. he said he would come, he didnt, though.
+        as/though 引导让步状语, 从句需要倒装. 
+        	adj/adv/n/v + as/though + o + v + 从句.
+            child as he is, he knows a lot. much as i like it, i wont buy it. Smart as he is, he dont study hard.
+       whetre...or (不管..还是). 疑问词+ever (不管, 无论...)
+    	whether you believe it or not, it is ture. 
+        whetever(=no matter what) you say, he wont believe you.
+        whoever you are(no matter who you are), you must obey the rules.
+       when, while 作为从属连词, 相当于although:
+        	while i admit that there are problems, i dont agree that they connot be solved.
+       9.比较状语从句, 在adj,adv 部分
+   	   10.状语从句中的省略句: 
+            1.如果状语从句中的主语和主句中的主语一致, 并且从句中包含be主动, 从句中的主语和be 可以省略. when/while/as/if/unless/until/even if/once/ even though/than+分词 省略.
+            	when corssing(when you crossing) the street, you should be careful.
+                unless invited(unless i am invited), i wont go to the evening party.
+             2.while , as if /though + 介词短语 的省略结构:
+                while in Americal(while i was in Americal), i learned a lot about customs.
+             3. as, as if /though + 名词 的省略结构:
+                My stepfather treated me as if my won father(as if he were my own father)
+             4.whether, though, when + adj 的省略结构:
+                though young(though he is yong), he knows a lot about chinese history.
+             5. 如果状语从句中的主语是it, 谓语是be 或者从句是 there be  句型, 经常可以把it和be 或者 there be 省略
+          	 6. 如果as, than 引导的比较状语从句前后句意明确,可以省略as ,than 从句中的成分.
+                Mary is wearing the same coat as Jane(as Jane wears the coat)
+  2. 名词性从句:  主要包含主句从句,宾语从句, 表语从句, 同位语从句, 
+    	that 引导的从句, wether/if 从句, 特殊疑问词引导的从句, what/wh-ever 等连接代词引导的名词性关系从句,as if /as though 引导的表语从句.
+            that 引导的从句: 除了及物动词的宾语从句可以省略, 主语从句, 介词宾语,表语从句, 同位语从句一般不省略.
+            whether /if  主语从句放于句首时, 只有whether, 及物动词的宾从都可用, 但是又区别, 介宾, 表语从句, 同位语一般只用whether.
+            特殊疑问句/ 名词性关系从句, 主语语序, 要用陈述语序.
+         1.that 引导的主语从句: that 从句作为主语的时候, 常用it 作为形式主语, 常见的句型:
+             it be + adj + that 从句. adj(abvious, true, natural, surprising, good, wonderful, funny, possible, likely, certain, probable)
+             	it is certain that she will do well in her exam.
+             it be  + 名词词组(no wonder, an honor, a good thing, a pity, no surprise) + that 从句
+             	it is no wonder that our team has won the game. 
+             it  be + 过去分词(side, reported, thought, expected, decided, announced, arranged)+ that 从句
+            	it is said that Mr Green has arrived in Beijing.
+             在口语和非正式的文体中,that 经常可以省略, 尤其在短句中, 但是that从句位于句首, 连词that等不可省略. 
+            	it is a pity(that)you are leaving.
+                that we are invited to a concert this evening is good news to us.
+        2.宾语从句:常见可接that从句的宾语动词有: see, any, know, imagine, discover, believe, tell, show, think, consider, be sure, be afraid.
+          在可以接复合宾语的动词之后 think, make, consider等 可用it 作为形式宾语.
+        	do you know (that) he has joined the army?
+            we think it highly probable that he is dead.
+          that 从句一般不从当介词宾语, 偶尔作为 except, in 的宾语. 其他介词后需要that从句作为宾语的时候需要用it 做形式宾语.
+        	he is a good student except that he is a little bit careless.
+            he differed from his classmates in that he devoted his spare time to reading.
+            you may depend on it that i shall always help you.
+        3. 表语从句: that 引导的表语从句一般不可以省略.
+            My decision is that  all of us are to start at 6 tomorrow morning.
+        4.同位语从句: that 引导同位语从句的时候, 应在某个抽象名词之后. 如 fact,hope, desire,thought,suggestion,idea,news,problem,possibility 对前面的名词进行补充说明,that在句子中不可省略.
+            there is a feeling in me that we will never know what a UFO is not ever.
+            whether/if 
+            
 ~~~
 
 
@@ -474,12 +666,19 @@ I would sooner that you were not my brother.
 
 ```python
 # 常见的名词辨析：
-common, usual, normal, ordinary:
-nearly, almost, hardly
-fairly, quite, rather,very, pretty:
-possible, probably, likely:
+1. common, usual, normal, ordinary:
+2. nearly, almost, hardly
+3. fairly, quite, rather,very, pretty:
+4. possible, probably, likely:
     possible, 客观上的可能性, 希望小. probably,很可能,大概有事实上逻辑上的合理可能. likely, 外表迹象判断
     It is possible,probably, likely that...
+5. except, basides, but, except for, apart from:除...之外
+    except: 从整体里排除部分, all are present except Helen.
+    beside: 除...之外尚有...句子中常有 other, others, also, else等.  two others were on duty beside Helen.
+    but: 在句子中常与 nobody, none, no one, nothing, anything, everyone, all, who等连用,后接名词,代词或者不定式. I did nothing but write a letter.
+    except for:表示出去整体中的一部分,对非同类事物的排除.  一个句子中只有出现了像“all、any、every、nobody、nothing”这类词语的时候，才能在“expect”后跟名词和名词短语。这类句子还有一个例外，就是“except for”可以放在句首，而“except”则不能  
+    apart from: 除..之外尚有/别无.故可以代替beside, except, except for等. apart from providing warmth, what is fire sued for?
+    
 ```
 
 ### 固定搭配：
@@ -491,5 +690,23 @@ when it comes to... 提到...	   foot it 不行去,							take it easy 别着急
 3 more days = another 3 days
 go to (great) lengths to do sth.  竭尽全力做某事.
 no better than (与...一样不好) not better than (不比...好) , more or less == almost  far more +adj 及其,非常.
+# 名词与介词的固定搭配:
+1. 要求用to的固定搭配:
+    key, answer, visit, apology, introduction, attitude, monument, journey, entrance等
+2. 要求用in的名词:
+    interest, expert 等
+3. 要求用on的名词:
+    mercy, congratulations, effect等
+4. 要求用其他介词的名词:
+    prize(for), respect(for), victory(over), struggle(with), excuse(for), (for)fear(of)
+5. 形容词与介词的固定搭配:
+    1. at: angry, good, bad, clever, surprised, excited, puzzled, frightened
+    2. of: afraid, sure, certain, full, tired, fond, proud, worthy
+    3. with: angry, strict, carteful, busy, popular, patient
+    4. in: weak, strick, rich, interested, successful, slow.
+    5. to: next, good, polite, kind, cruel, rude, known, married, close, similar, due.
+    6. for: sorry, famous, fit, unfit, eager, anxious, hungry
+    7. about: sorry, worried, curious, sure, certain
+       同一个形容词和不同介词搭配含义不同,例如: he is good to her.   the advice is good for her.
 ```
 
