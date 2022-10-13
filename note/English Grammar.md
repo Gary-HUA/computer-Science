@@ -234,7 +234,7 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
 ### 动词
 
 ~~~ python
-# 常见动词和动词词组. 
+# 常见动词和动词词组. 动词辨析
 ~~~
 
 
@@ -244,7 +244,7 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
 ~~~python
 # 时态:(一般现在, 一般过去, 一般将来, 现在进行, 过去进行, 过去将来, 将来进行, 现在完成, 过去完成, 现在完成进行)
 # 语态: 主动, 被动.
-一般现在时 (do/does), 
+一般现在时 (do/does)
 一般过去时(did)
 一般将来(will/shall do. be to do)(be going to do. be about to do)
 现在进行(am/is/are doing)
@@ -255,6 +255,29 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
 现在完成进行(has/have been doing)
 过去完成进行(had been doing)
 过去将来(would/should do, was/were to do)(was/were going to do, was/were about to do)
+"一般现在时": 现在的经常性, 习惯性的动作或者状态, 常与 often, always, seldom, twice, a day 等连用, 或者表示客观真理,科学事实.
+    the sun rises in the east.
+    if, unless, even if 引导的条件状语从句, 主句的时态表示将来, when, before, until(till), as soon as, the moment, once 引导的时间状语从句, 主句时态表示将来. no matter, what/who/which/when/where/how/whatever, whoever.... 状语从句, 主句时态表示将来.
+    i will go with you if i finish my work.
+ "一般过去时": 经常与 yesterday, last night, three days ago 等连用, i thought .... 也用过去时态. i went to China last year.
+ "一般将来时":　在现在看以后要发生的事情．或者是食物固有的属性或者必然的趋势．fish will die without water.
+    be going to  表示计划, 打算做某事, 还可以根据现在的迹象对未来的推断. look at at the dark counds, it is going to rain.
+    be about to  表示即将的将来, 不和具体的时间状语连用. the rain is about to start.
+    come, go, arrive, leave, begin, start 等动词, 表示按计划将来要发生的事. he comes here tonight.
+    be to do 1. 表示计划安排做的事情. she is to be married next week.
+    		 2.表示应该, (should, ought to) you are to report to the police. 
+        	 3.表示想要, 打算 约等于 intend, want 
+              4. 用于第一人称疑问句表示征求意见, what are we to do next?
+              5. 用于否定句, 表示禁止 约等于 mustn't, the books are not to be taken out.
+              6. 表示可以, 可能, 想当may, can 
+                were to do sth, 用于 if 或者even if /though 从句中, 表示对未来的假设. be to blame(该受责备), be to let (待出租)
+  "进行时态": 
+    1. 一个长动作背景, 被一个短动作打断, 长动作往往用进行体, 短动作用 一般体. my brother fell while he was riding his bicycle and hurt himself.
+    2. 表示动作的未完性, 暂时性: have you moved into the new house? not yet, the rooms are being painted(未完)
+    3. 表示计划, 安排要做的事情: i am going to meet my parents
+    4. 表示正在进行的情况: i met him 3 years ago, she was working at a clothes shop at that time.
+    5. 表示反复出现的或者习惯性的动作, 往往包含有赞赏, 厌恶, 遗憾等情绪.常与 always, continually, constantly 连用.
+    	he is always thinking of others first.
 ~~~
 
 ### 情态动词 and 虚拟语气
