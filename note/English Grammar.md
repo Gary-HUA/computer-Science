@@ -654,10 +654,246 @@ I would sooner that you were not my brother.
             you may depend on it that i shall always help you.
         3. 表语从句: that 引导的表语从句一般不可以省略.
             My decision is that  all of us are to start at 6 tomorrow morning.
-        4.同位语从句: that 引导同位语从句的时候, 应在某个抽象名词之后. 如 fact,hope, desire,thought,suggestion,idea,news,problem,possibility 对前面的名词进行补充说明,that在句子中不可省略.
+        4.同位语从句: 
+            1.that 引导同位语从句的时候, 应在某个抽象名词之后. 如 fact,hope, desire,thought,suggestion,idea,news,problem,possibility 对前面的名词进行补充说明,that在句子中不可省略.
             there is a feeling in me that we will never know what a UFO is not ever.
-            whether/if 
+            2. whether/if 是否 
+            	表语从句, 同位语从句只用 whether 不用 if. the problem is whether the meeting will be given. i have no idea whether the meeting will be given.
+                主语从句置于句首时候, 只用whether 不用 if. whether the meeting will be given is still a problem.
+                it 作为形式主语, 主语从句放在句末, whether /if 都可以. it is doubtful whether the meeting will be given.
+                discuss + whether 引导宾语从句
+            	在宾语从句中:
+                i dont care whether/if he comes or not. ( 从句不能用否定  whether he doesn't come)
+                i dont care whether or not he comes. (只有 whether or not 没有 if or not 用法 可以 if ...or not)
+                i dont know thether to go there.
+                介词后只用whether,不用if: it depends on whether you can do the work well. 
+                whether 与 if  有些条件可以互换, 但是在以下四种情况 只用whether 不可以用 if 
+                      1. whether or not  2. whether to do  3.名词性从句(主,表,同位) 4.介词 + whether
+                                  
+                   
             
+~~~
+
+### 特殊句式: 倒装Inversion, 强调, 省略, 主谓一致, 反意疑问句, there be 句型
+
+~~~python
+# 为了强调、突出等词语的目的而颠倒原有语序的句式叫做倒装句。在倒装句中，颠倒了的成分可以恢复原位而句意基本不变，句法成分不变. “舟尾横卧一楫，楫左右舟子各一人”，本来应该说“舟尾一楫横卧”，但倒过来说，上下句用“楫”来连接，就更连贯。
+1. 全部倒装: 谓语部分完全放在主语之前的句子,便是完全倒装.
+    1. 表示地点的副词 here, there 放于句首, 并且主语是名词不是代词,常见的谓语动词有 be, go, come, exist, follow,remain, lie,等 时态要用一般现在时.
+    Here comes the bus. (there stand/lie/exist/....), there goes the last bus. here is the address of you hotel. (here you are 代词作主语)
+    2. 表示时间(now,then),方向的副词(out, in, up,down, away)或者表示地点的介词短语放于句首, 并且主语不是"代词"
+    	副词/介词短语 + 谓语 + 主语 常见的动词有 come, fall, follow, exist, lie, go, reamin, run 时态一般现在时或者一般过去时.
+        now comes you ture! 该你了. up went the arrow into the air. under the table sleeps a white cat.
+    3. 为了保持句子的平衡或者强调表语部分等,将作表语的形容词, 分词, 介词短语, such 置于句首时候,需要完全倒装.
+    	形容词/现在分词/过去分词/介词短语/such + be + 主语
+        Happy are those who are contented. 知足者常乐.
+        Such were his words (Such was what he said.)
+        Seated on the ground are a group of young people.
+    Written on the blackboard are the names.
+    In walked the teacher. (up, down, in, out...)
+2. 部分倒装 partial inversion:
+    把 be 动词, 助动词或者情态动词置于主语之前的句子叫部分倒装句. 
+    1. Only 修饰副词, 介词短语或者状语从句, 并且放在句首
+    	only in this way can we work out the problem.
+        如果谓语部分没有助动词, 则需要助动词构成倒装句.
+        Only after the war did he learn the sad news.
+        only 修饰状语从句时, 只有主语倒装
+        only when he returned did we find out the truth.
+        only 修饰主语时, 句子不可以倒装. only he can answer the question.
+    2. 六个重要的固定句型:
+        1. so + be /助动词/情态动词 + 主语  "....也是如此" (=it is/was the same with. so it is/was with ...)
+        	they love having lots of friends. so do those with disabilities.
+            they love... it is same with those with disabilities./so it is with those with disabilities.
+       	   如果仅仅对前面内容的肯定或者符合(so=indeed) 那么, 句子不可使用倒装.
+        	i was afraid. so was i .  -----> i was afraid. so you were. 
+        2. neither/nor + be 动词/助动词/情态动词 + 主语 "...也不这样"  (=it is/was the same with. so it is/was with ...)
+        	Gary cant ride a bicycle. neither/nor can Jam.
+            Gary cant ride a bicycle. it is same with Jam.(so it is with Jam)
+            这个句型中的neither/nor 不可以用so...not 代替, 但是可以用not...either 改写.
+            i have never been abroad. neither/nor has he.
+            i have never been abroad. he has never/not been abroad, either.
+        3. 如此...以至于.... 这个句型 so,such 后边的句子要倒装, that 引导的从句不倒装.
+        	so + adj/adv ... that... / such + (a/an) adj + n ...that  
+            So clearly does he spean English that he can always make himself understood.
+            Such an interest book does he have that we all want to read it.
+        4. neither...., nor... "...不..., ...也不..." 由于neither and nor 都是否定词, 他们后边的句子都需要倒装.
+        	Neither do i know, nor do i care about it.
+        5.  Not only ... but also... "不仅....而且" 也可以写成 not only ..but / not only...but...as well 但是but(also)连接的句子必须用正常语序
+        	Not only will help be given to people to find jobs, but also medical treatmetn will be provided fo people who need it.
+        6. Not until... "直到...才..." not until 引导的式从句时, until从句的主谓不可倒装, 只有主句需要倒装.
+        	Not until 4:00 in the morning could he fall asleep.
+            Not until he returned did we have supper.
+ 3. 形式倒装: 形式上的倒装在语法上称为前置。 它的特点是: 只把强调的内容提至句首, 主谓并不倒装。 这样的结构非常多, 但有几个重要的句型需要特别注意:
+        1. 感叹句: 对名词或者中心词式名词感叹时, 用what. 对形容词/副词感叹 用How.
+            What an interesting talk they had!
+            How interesting their talk is!
+        2. the more..., the more....
+        	the more you listen to English, the easier is becomes.
+            the harder you work, the greater progress you will make.
+        3. however, whatever 引导的让步状语从句.
+        	however + adj/adv  However difficult he problem may be, we must work it out this evening.
+            whatever + n. whatever reasons you have, you should carry out your promise.
+        4.As/ though  引导的让步状语从句采用形式倒装.如果表语是单数名词或者形容词最高级 不再用冠词.
+        	1. 表语的倒装: 
+                tired as/though he was, he still went on with his work.
+                stranger as/though it seems, it is true.
+                Exhausted as/though she was, she wasnt able to sleep.
+             	youngst as/though he is in our class, he speaks English best.
+             2. 谓语动词的倒装:行为动词前置时, 从句主语后面要用 may, might, can,could, will, would 等情态动词, 若没有情态动词, 则需加上一个 do(does 或 did) 。 若前置的行为动词是及物动词, 则其宾语也随其后一并提前
+                try as he might, he didnt pass the exam.
+            	search as they would here and there, they could find nothing in the room.
+            	Change your mind as/though you do, you will get no help from us.
+             3. 状语的倒装: 
+                Much as he likes the bike, he doesnt want to buy it.
+                Hard as i studied, i could not catch up with them.
+# 强调句: 
+	1. it is / was + 被强调部分 + that/who + 句子剩余部分 (强调人用that/who 物用that, 被强调部分可以是主语,宾语,状语, 但是不能是定语和谓语)
+    	it is i who/that am right.
+        it was him who/that we met at the school gate.
+        it was in the park that Tom lost his watch.
+    2. 一般疑问句的强调句型. is/was it + 被强调部分 + that/who + 其他成分
+    	Was it in 1939 that the second world war broke out?
+    3. 特殊疑问句: 特殊疑问词 + is/was + it + that + 其他
+        who was it that broke the window?
+        when was it that you called me yesterday?
+        what is it that you want me to do?
+    4.有时候可以用 it might be ..that..../ it must have been ...that 表示强调.
+    	it might be his father that you are thinking of.
+        it must have been his borther that you was.
+    5. not ...until...强调句:
+        it is/was not until + 被强调部分+ that + 其他成分
+        it was not until 10 oclock that he went to bed.
+    6. 强调句型 it is/was...that..., it is/was + 时间 + when/before 从句.和it is + 时间+since从句. it was not long...before... 区别.
+    	it was at midnight that i got back home yesterday. it was two years ago that i began to learn English.
+        it was midnight when/before i got back home yesterday.(非强调句)
+        it was two years since i began to learn English.
+    7.  it wasnt long before...不久以后就...
+    	it wont be long before... 不久就会...
+        it was tow years/days"..."before...  过了两年就...
+        it will be two years/days""before...  还要两年才...
+        it was two years before he came back from abroad.(注意这两句的翻译, 他两年以后回国.)
+        it was two years later that he came back from abroad.
+    8. 对谓语动词的强调 用 do/did/does
+    	Do come this evening. He did write to you last week.
+# 省略句:
+	1. 不定式的省略: 在 be afraid, expect, forget, hope, intend, like, love, mean, prefer, refuse, seem, try, want, wish 等后面常用to代替被省略词
+        I asked him to see the film, but he didnt want to.
+    2. 在 have, need, ought, be going, used 等后面用to 
+    	I didnt want to go there, but i have to.
+    3. 在 glad, happy, pleased, delighted 等后面用to 
+    	Will you join in the game? --- i'd be glad to.
+    4. 否定形式的省略用not to
+    	shall i go instead of him? --- i prefer not to.
+    5. 如果不定式中含有 be, have, have been 通常保留 to be, to have, to have been.
+    6.状语从句中的省略:
+        1. 当状语从句中主语和从句中的主语一致, 并且从句中包含了be动词的时候, 可省略从句中的主语和Be动词, 此时从句中出现:
+            "连词(as, as if, once) + 名词":
+            once(he was) a teacher, he now works in a govement office.
+            "连词(though, whether, when)+ 形容词":
+            work hard when (you are) young, or you will regret. 少壮不努力, 老大徒伤悲.
+            "连词(whether, as if , while)+介词短语"
+            he looked everywhere as if (he was) in search of something.
+            "连词(when, while, though) + 现在分词"
+            while(i was) walking along the street, i heard my name called.
+            "连词(when, if, even if, unless, once, until, than, as) + 过去分词"
+            the exhibition is more interesting than(it was) expected.
+            "连词(as if, as though) + 不定式"
+            he opened his lips as if (he was) to speak.
+        2. 当从句的主语是it, 谓语动词中有包含有系动词Be 可以把it 和 be 一起省略, 此时即: 连词(if, unless, when, whenever) + 形容词
+            unless (it is) necessary, you d better not refer to the dictionary.
+         3. 可以用 so/not 去代替前文的重复内容, 有if + so/not 的句式
+        	get up early tomorrow, if not(if you dont get up early), you will miss the first bus.
+            he may not be at home then, if so(if he is not at home), leave him a note.
+  # 主谓一致:(语法上一致, 意义上一致, 就近原则)
+		1. 并列主语的主谓一致:
+        	1. 两个单数名词或者是不可数名词使用and 连接, 表示两个不同的概念, 谓语动词经常用复数形式.
+            	tom and jack were close friends.  steam and ice are different forms of water.
+             2. 两个单数名词用and 连接, 表示同一个人/概念/不可分整体, 谓语动词仍用"单数"的形式
+            	the singer and dancer(歌舞演员) is to attend our evening party. 如果说 the singer and the dancer 是两个人
+             3. 被every, each, many a, no 等限定的单个主语由and 连接时候, 谓语动词仍用单数, 后限定词可以省略.
+            	each boy and girl has an apple. many a teacher and ()student has seen the film.
+             4. 一个单数名词被几个用and 连接的并列形容词修饰, 可以指一件事或者几件事. 这种名词作主语的时候,要根据意义一致的原则决定谓语动词的单复
+            	simple and plain living is a fine quality.
+                English and American literature are appealing to her.
+             # 5. and 连接的两个what 从句, 做主语时, 根据意义一致的原则决定谓语动词的单复数形式.
+            	what he says and does do not agree.
+                
+             5. 由 or, nor, either..or, neither...nor, nor only...but(also) 连接的并列主语, 一句就近原则
+            	one or two friends are coming this evening.
+                neither i nor he is in favor of her marriage.
+             6. 名词 + with/along with/together with/ as well as/ rather than / as much as/ but/except 等+名词作主语, 谓语动词和第一个名词一致
+            	Tom(as well as two of his friends)was invited to the party.
+                Dr. smith (together with his wife) is to arrive on the evening flight.
+        2. 数词和量词作主语时候的主谓一致:
+            1.表示时间, 重量, 距离, 价格, 体积等名词的复数作为主语的时候,当作一个整体看待,  动词用"单数"
+            	twenty years is a long time in one's life.
+            2. 分数修饰名词作主语的时候, 动词单复取决于意义.
+            	about one third of the books are worth reading.
+            3. 由 kind, form, type, sort, species, portion, series of 等修饰的主语, 动词的单复数取决与这些词的单复数.
+            	this new type of buses is now on show.  all kinds of diffculties have to be overcome.
+            4. a number/ variety/group of + n + v复数.  the number/variety of +n + v单
+            	many a / more than one + 单数名词+v单数. more than one student has failed the exam.
+                a quantity of (+复数名词+v复数 /  + 不可数名词+v单数), quantities of +复数名词/不可数名词 + v复数
+            5. 某些特殊名词作主语的时候的谓语动词的单复数形式:
+                1. 集体名词: family, class, crew, group, team, audience, committee, public等作为主语时候, 动词单复数依据意义而定.当集体看用单数, 每个成员分开看就需要复数.   the class consists of twenty-five boys and twenty girls.  the class are doing experiments.
+            6. trousers, pants, jeans, compasses, glasses作为主语 + v复数 但是如果前边有了量词修饰, 和量词保持一致
+            	here are some new pairs of shoes.
+            7. what 引导的从句作主语 + v单数 
+            	what he said leaves much for us to think about.
+ # 反义疑问句: 表示提问人的看法, 没有把握, 需要对方赞同给出肯定答案, 一般前一部分肯定, 后部分否定, 反之亦然, 两部分人称时态应保持一致.
+	1. must:
+        1. must 表示必须 ------> needn't   mustn't 表示禁止 -----> must/may
+        	you must go now, needn't you ?   you mustn't smoke here, must/may you?
+        2.must 表示推测作为 一定, 准是, may/might 表示可能,在做反义疑问句的时候我们可以把句子看作  i am sure/guess that 从句中的宾语去找谓语动词形式
+        	you must/may(might) be hungry now, __aren't you____?   i am sure/guess that you are hungry now, aren't you ?
+             you must have watched that football match last night. ___didn't you__? last night 给出了时间状语 表示过去, didn't you?
+        3. must 的反义疑问句主义时态, 一般由明确的时间状语, 如果不能确定时态, 考虑完成时态.
+        4. 反义疑问句的结构: 
+            结构一: 肯定陈述句 + 否定简短句.  he often goes to shchool by bike, doesn't he?
+            结构二: 否定陈述句 + 肯定短句.  that isn't your book, is it? (当陈述部分有 hardly, seldom, few, little, no, never, nothing, nobody, nowhere 等否定词时，疑问部分要用肯定形式)  neither you nor i can work it out, can we?
+             结构三: 祈使句  + 短句   (祈使句的反意疑问句，若前面是否定结构，则附加问句只能用 will you。若前面是肯定结构，附加问句用 will you，也可用 won’t / would / can / can’t you 或 shall we 等，它形式上是反意疑问句，但并不表示正式的疑问句，也不表示反意，而是表示邀请或表示请求)
+                stop talking, will you ?    close all the windows, will you/won't you? 
+             否定意义的前缀,反义疑问句部分用否定  it is unfair, isn't it ?
+             let’s 用于提出建议并包括对方时，其附加问句用 shall we。let us 表示征求对方许可，其附加问句用will you。let + 第三人称时，其附加问句用 will you。这种反意疑问句往往用来表示进一步征求对方的意见，使口气变得客气、委婉一些。如：
+                  Let’s go to see the pandas, shall we? 咱们首先去看熊猫，好吗?
+                  Let us wait until 5:00, will you? 让我们等到5点，好吗?
+        5. 反义疑问句的回答 不管主句是否定还是肯定, 附加句的肯定或者否定, 在回答的时候只需要看事情是否发生, 发生用肯定, 未发生用否定 
+        	you aren't a student, are you ?    you are a student,  aren't you ?
+            		只需要回答是不是学生  yes iam.  No i am not 
+ # there be 句型: 
+		1. there be 句型符合就近原则: 
+        	there is a pen, tow books, and many peicils on the desk.
+         2. there be 有多种时态: 
+            there was/will be/ have been/ can't be....
+            there will be thousands of football fans in london next month.(不同的时态)
+         3. there be 中的be 有时候也可以是 seem to be, happen to be, is likely to be, 或者半系动词 remain, stand, lie, go, exist, follow, live, come, occur 替换(为了表达生动,正式文体)   there is likely to be something wrong with his computer.
+         4. there be 句型: 
+             there is  no/some/much/little difficulty/trouble  with sth 做某事(有)没有困难.
+            	there is some diffuculty with the text.
+             there is  no/some/much/little difficulty/trouble  in doing sth 
+            	there is much difficulty in finishing the work in the given time.
+             there is no doubt about/ of sth 毫无疑问...
+            	there is no doubt about his coming here.    there is no doubt of his words.
+             there is no doubt that ....
+            	there is no doubt that he likes hunting.
+             there is no hurry (+to do sth) 不要急于做某事 
+            	there is no hurry to leave, for it is early.
+             there is no need for (sb, to do) sth. 没有必要这样.
+            	there is no need for him to go there. there is no need for such a meeting
+             there is no question about sth. 毫无疑问...
+            	there is no question about what he said.
+             there is no question of donig sth .
+            	there is no question of he inviting us to his party. 
+             there is no sense in doing sth. 做某事没有道理或者说不过去.
+            	there is no sense in forcing him to do what he donesn't like to.
+                There is no sense in leaving him alone when he is in trouble.
+              there is no point in doing sth 做某事没有用.
+            	there is no ponit in regretting. 
+                there is no point in reasoning with him.
+              there is no doing sth. 不可能, 无法... 
+            	there is no telling who will win the match.
+                there is no giving you a reply before deciding it.
+
 ~~~
 
 
@@ -709,4 +945,25 @@ no better than (与...一样不好) not better than (不比...好) , more or les
     7. about: sorry, worried, curious, sure, certain
        同一个形容词和不同介词搭配含义不同,例如: he is good to her.   the advice is good for her.
 ```
+
+### 概念理解, 疑问
+
+~~~ python
+1. 什么让步状语从句?
+	让步状语:
+2. it 做形式主语 和 强调句中it  怎么区分两种句子.?
+	it 做形式主语的话, 去调 it is/was that 结构不能构成一个完整的句子, 去掉了主语就不再完整. 
+    it was at midnight that i got back home yesterday. (i got back home at midnight yesterday) 强调句.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+
+
+~~~
 
