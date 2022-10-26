@@ -61,7 +61,7 @@ He doesn't know how precious a thing it is.
 # 零冠词 
 1. 不可数名词， 复数名词 表泛指。go for advice/ horses are useful animals.
 2. "月， 季， 星期， 节假日， 洲， 称呼， 职务， 三餐， 球类，惯用语， 学科， 棋类等前用零冠词。we selected him president of the society. Tom became monitor of our class."
-3. turn go 作为变成，成为。 不用冠词. he turned scientist.
+3. turn, go 作为变成，成为。 不用冠词. he turned scientist.
 4. 单数名词 + As/though + 主语 + v : 虽然...但是。 hero as he is, he has some shortcomings.
 5. 独立主格结构：  he sat at the table, pen in hand/ a pen in his hand/with a pen in his hand/ and a pen was in has hand.
 6. 有些不可数名词前边有形容词。 也不用a/an 特指可以用the. what fine weather it is!  here is good news for you. i wish you good luch in everying.
@@ -278,6 +278,18 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
     4. 表示正在进行的情况: i met him 3 years ago, she was working at a clothes shop at that time.
     5. 表示反复出现的或者习惯性的动作, 往往包含有赞赏, 厌恶, 遗憾等情绪.常与 always, continually, constantly 连用.
     	he is always thinking of others first.
+    6. 瞬间动词的进行体可以表示将来.
+  "现在完成时态": 一个动作开始于过去, 持续到现在(也许还会继续)
+	1.常见的词有: recently, lately, in the last/past/few days/years, since then, up to now, so far
+    2. 发生在过去的事情对现在产生的影响: 常用状语, already, just, yet, never, before 
+    3.this/it is the first/secone...time that 从句.从句的谓语动词用现在完成时态.
+    4.在条件, 时间,让步状语从句中, 表示将来某个时间以前已经完成的动作. I will go with you as soon as i have finished my work.
+    5.瞬间动词和时间的搭配,有时候需要用连续性动词. he has come to shanghai since last year(x). he has lived in shanghai since last year.
+    6.常见的瞬间动词: come, go, get to/reach/arrive at/in, have, buy, open, sell, close, join, begin, star, get up, return, borrow, lend, give, bring, take, die, finish, end, receive, hear, marry, break, lose, jump etc. 
+ "过去完成时态": 发生在过去, 并且在过去已完成, 在一般过去式之前. 
+    1.he said he had been abroud for 3 years.
+    2. 从过去的某一个时间开始, 一直延续到过去的另外一个时间, 常用的时间状语有: by then, by that time, until then, by the end of, before 2000, by the time+过去时态的句子. By then he had learned english for 3 years.
+    3. hardly/scancely/rarely had sb done when + 过去时态 / No sooner had sb done than +过去时, 一...就...   
 ~~~
 
 ### 情态动词 and 虚拟语气
