@@ -289,7 +289,28 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
  "过去完成时态": 发生在过去, 并且在过去已完成, 在一般过去式之前. 
     1.he said he had been abroud for 3 years.
     2. 从过去的某一个时间开始, 一直延续到过去的另外一个时间, 常用的时间状语有: by then, by that time, until then, by the end of, before 2000, by the time+过去时态的句子. By then he had learned english for 3 years.
-    3. hardly/scancely/rarely had sb done when + 过去时态 / No sooner had sb done than +过去时, 一...就...   
+    3. hardly/scancely/rarely had sb done when + 过去时态 / No sooner had sb done than +过去时, 一...就... 
+    	hardly had we started when the car got a flat tyre.
+    4. it was/had been +一段时间+since sb had done sth. 
+    	it was 10 years since we had had such a wonderful time.
+    5. 表示愿望, 打算一类的词如:hope, expect, mean, intend, want, think, suppose等 他们的过去完成时态表示过去未曾实现的愿望或者意图.
+        i had hoped to see more of shanghai.
+ "将来完成时态": 到将来某个时间某一个动作将会完成, 常用的时间状语位by + 将来的某个时间
+    1. By this time of next year, all of you will have become college students.
+  "现在完成进行时态": 一个动作开始于过去, 持续到现在, 并且强调现在依旧在执行.
+   	 	he has been leaving english for 6 years. it has been raining for 3 days(强调说话者有抱怨的感情色彩)
+  "一般过去时态, 现在完成时态": 一般过去时表示的是一个或者一段时间可以具体确定的,在过去发生的, 单纯属于过去没有其他含义.
+    现在完成时态从过去到现在 主要表示现在的状态, 还可能继续到未来. 
+    	he served in the army from 1999 to 2012.  he has served in the army for 5 years.
+        i saw Hero last year.   i have seen Hero before.
+  "一般过去, 过去完成": 一般过去是指一个过去的动作或者情况, 过去完成时态式过去的一个动作或者时间之前发生的.
+     he had learned 3000 english words before he come to this school.
+  "被动语态:" 
+1. 不明动作执行者,或者没有必要指明的时候. the window hasnt been closed for weeks.
+2. 强调动作承受者或者事件用被动. 
+3.在文章标题, 广告, 新闻中 用被动.  Girls wanted.
+4. 动作执行者不是人的时候用被动. the number of deaths will be reduced.
+5. get+过去分词表示被动. she got married last week.
 ~~~
 
 ### 情态动词 and 虚拟语气
