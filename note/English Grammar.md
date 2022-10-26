@@ -225,10 +225,6 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
             比较级 + than + (any other+单n / all the other复n / anyone else / any of the other+复n / the rest of +复n/不可数
                           China is large than any other country in Asia.
 15. 最高级: 否定+比较级 = 最高级     he has never spent a more worrying day.
-         
-           
-            
-            
 ~~~
 
 ### 动词
@@ -306,11 +302,22 @@ v + (more than/about/less than) + 倍数 + (as adj,adv 原型 + as /adj,adv 比�
   "一般过去, 过去完成": 一般过去是指一个过去的动作或者情况, 过去完成时态式过去的一个动作或者时间之前发生的.
      he had learned 3000 english words before he come to this school.
   "被动语态:" 
-1. 不明动作执行者,或者没有必要指明的时候. the window hasnt been closed for weeks.
-2. 强调动作承受者或者事件用被动. 
-3.在文章标题, 广告, 新闻中 用被动.  Girls wanted.
-4. 动作执行者不是人的时候用被动. the number of deaths will be reduced.
-5. get+过去分词表示被动. she got married last week.
+    1. 不明动作执行者,或者没有必要指明的时候. the window hasnt been closed for weeks.
+    2. 强调动作承受者或者事件用被动. 
+    3.在文章标题, 广告, 新闻中 用被动.  Girls wanted.
+    4. 动作执行者不是人的时候用被动. the number of deaths will be reduced.
+    5. get+过去分词表示被动. she got married last week.
+  "主动形式表示被动":
+    1. 系动词:look, sound, feel, smell, taste, apear, seem, go, prove,turn, stay, become, fall, get, grow, keep + adj/noun 构成系表结构
+        the steel feels cold.
+    2. 表示开始, 结束, 运动的动词. 如: begin, start, open, close, stop, end, shut, run, move. 
+        the shop closed at 6pm every day.
+    3. 表示主语的某种属性特征的动词. read, write, act, iron, cut, draw, drive, sell, wash, clean, wear, open,cook, lock, shut, dry, eat, drink 这类动词表示被动的含义, 一般不单独使用, 常有一个修饰词. this coat dries easily.
+    4. 少数动词用于进行时态, 他的主动形式表示被动含义. print, cook, fly, hang, build, make. the meat is cooking.
+    5. 介词 in, on, under, 等+名词构成介词短语表示被动.
+   		under control/repair/discussion/construction/treatment  
+        for sale , on sale , in print, on trial 受审
+    6. 不能用于被动语态的词有: fit, have, wish, cost, agree with, arrive at/in, shake hands with, succeed in, belong to, happen to, suffer from, take part in.
 ~~~
 
 ### 情态动词 and 虚拟语气
@@ -1005,9 +1012,7 @@ no better than (与...一样不好) not better than (不比...好) , more or les
 ### 概念理解, 疑问
 
 ~~~ python
-1. 什么让步状语从句?
-	让步状语:
-2. it 做形式主语 和 强调句中it  怎么区分两种句子.?
+1. it 做形式主语 和 强调句中it  怎么区分两种句子.?
 	it 做形式主语的话, 去调 it is/was that 结构不能构成一个完整的句子, 去掉了主语就不再完整. 
     it was at midnight that i got back home yesterday. (i got back home at midnight yesterday) 强调句.
 3.
